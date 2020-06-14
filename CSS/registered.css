@@ -4,7 +4,7 @@
 }
 
 .box-content{
-    background-image: url('./img/registred.jpg');
+    background: silver;
     width: 1000px;
     height: 100vh;
 }
