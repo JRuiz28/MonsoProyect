@@ -31,21 +31,21 @@
             <section class="container-nav">
 
                 <article class="item-logo">
-					<a href="index.html">
-						<img src="img\Logo_MONSO.png" alt="Monso Cosmeticos Costa Rica" />
+					<a href="index.php">
+						<img src="img\Logo_MONSO.png" alt="Monso Cosméticos Costa Rica" />
 					</a>
                 </article>
 
                 <article class="item-link">
-                    <a href="index.html" class="link-home"> <span>Inicio</span> </a>
-                    <a href="catalogue.html" class="link-list"> <span>Catálogo</span> </a>
-                    <a href="about.html" class="link-about-us"> <span>Acerca de</span> </a>
+                    <a href="index.php" class="link-home"> <span>Inicio</span> </a>
+                    <a href="catalogue.php" class="link-list"> <span>Catálogo</span> </a>
+                    <a href="about.php" class="link-about-us"> <span>Acerca de</span> </a>
                 </article>
 
                 <article class="item-login">
-                    <a href="registerProduct.html" class="link-registration-module"> <span>Módulo de registro</span> </a>
+                    <a href="registerProduct.php" class="link-registration-module"> <span>Módulo de registro</span> </a>
                     
-                    <a href="login.html" class="link-login"> 
+                    <a href="login.php" class="link-login"> 
 					   <span>Iniciar sesión</span>
 					   <i class="fas fa-user"></i>
                     </a>
