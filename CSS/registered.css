@@ -4,7 +4,16 @@
 }
 
 .box-content{
-    background: silver;
+    display: flex;
+    margin: auto;
+    border: 1px dashed black;
     width: 1000px;
-    height: 100vh;
+    height: auto;
+}
+
+.img-registred{
+    display: flex;
+    margin: auto;
+    width: 600px;
+    height: auto;
 }
