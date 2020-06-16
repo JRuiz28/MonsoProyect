@@ -19,7 +19,7 @@ form{
     height: 500px;
 }
 
-form input{
+form input, select{
     font-size: 14px;
     margin: 5px;
     height: 25px;
@@ -33,4 +33,5 @@ form input{
 
 form button {
     margin: 5px;
+    background-color: #3A4F41;
 }
