@@ -31,7 +31,53 @@ form input, select{
     background-color: transparent;
 }
 
-form button {
+form .btn-action {
     margin: 5px;
     background-color: #3A4F41;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    transition: all 0.5s ease;
+}
+
+form .btn-action:hover{
+    background: #58a873;
+    color: #fff !important;
+}
+
+form .btn-add{
+    background-color: #828282;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    transition: all 0.5s ease;
+}
+
+form .btn-add:hover{
+    background: #413f3f;
+    color: #fff !important;
+}
+
+form button{
+    background-color: transparent;
+    border-radius: 8px;
+    color: gray;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    transition: all 0.5s ease;
+}
+
+form button:hover{
+    background: #0e0c0c;
+    color: #fff !important;
+}
+
+table{
+    border: solid;
+    width: 50px;
 }
