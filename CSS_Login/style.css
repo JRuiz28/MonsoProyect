@@ -1,5 +1,4 @@
 .main{
-font-family: Open Sans Condensed;
  /* border-style: solid;
  color: black;  */
  display: flex;
@@ -7,16 +6,17 @@ font-family: Open Sans Condensed;
  align-items: center;
  width: 100vw;
  height: 100vh;
+ background-color: #F4FCDD;
 }
 .login{
     height: 80%;
     width: 40%;
-    border-style: solid;
-    color:red;  
+    /* border-style: solid;
+    color:red;   */
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-    
+    background-color: #FFFFFF;
     border-radius: 24px;
     /* margin: 148px 51px; */
 }
@@ -24,6 +24,7 @@ font-family: Open Sans Condensed;
  align-self: flex-end;   
 }
 .login-form{
+    font-family:;
     display: flex;
     flex-direction: column;
 }
