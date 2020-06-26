@@ -5,7 +5,7 @@
 	<!--End - Navbars-->
 
 	<!--start body-->
-	<div class="div-form-product">
+	<div class="div-form-product" style=" background: url('img/back-register.jpg')">
 		<form>
 			<h1>Registro de producto</h1>
 			<div class="product-code">
