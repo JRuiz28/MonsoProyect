@@ -1,5 +1,7 @@
 <?php
 	require('Header.php');
+	echo '	<link rel="stylesheet" href="CSS/registered.css">';
+
 ?>
 	<!--End - Navbars-->
 
@@ -10,7 +12,12 @@
 			<article>
 
 				<img class="img-registred" src="img\registred.jpg" alt="">
-				<span class="message-congratulations"></span>
+				<div class="container-message">
+					<div>
+						<span class="message">Usuario guardado exitosamente. </span><i class="fas fa-laugh-beam message"></i>
+					</div>
+					<a href="index.html">Volver al menú principal</a>
+				</div>
 			
 			</article>
 		</section>

@@ -7,6 +7,7 @@
     <title>Monso</title>
 
 	<!--CSS Styles-->
+	<link rel="stylesheet" href="CSS/registered.css">
 	<link rel="stylesheet" href="CSS/index.css">
 	<link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/nav.css">
