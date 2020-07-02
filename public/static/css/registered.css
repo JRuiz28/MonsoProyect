@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box-content{
+    display: block;
+    position: relative;
+
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+}
+
+.img-registred{
+    position: absolute;
+    width: 1000px;
+    height: 800px;
+    z-index: 1;
+}
+
+.container-message{
+    flex-wrap: wrap;
+    position: absolute;
+    padding: 20px;
+    background: #f5f5f5;
+
+    border-radius: 10px;
+    opacity: 0.85;
+
+    left: 200px;
+    top: 200px;
+    width: 600px;
+    height: 400px;
+    z-index: 2;
+}
+
+.message{
+    font-size: 64px;
+    font-family: sans-serif;
+    line-height: 100px;
+    color: #3A4F41;
+}
+
+.container-message > div{
+    width: auto;
+    height: auto;
+
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.container-message > a{
+
+    font-size: 30px;
+    font-family: sans-serif;
+    text-decoration: none;
+
+    padding: 15px 15px;
+    margin: 60px 120px 20px;
+
+    color: #3A4F41;
+    border: 2px solid #3A4F41;
+}
+
+.container-message > a:hover{
+    cursor: pointer;
+    background: #3A4F41;
+    color: white;
+}
+
+/*view responsive*/
+
+@media(max-width: 1000px){
+
+    .box-content{
+        width: 768px;
+        height: 768px;
+    }
+    
+    .img-registred{
+        position: absolute;
+        width: 768px;
+        height: 768px;
+    }
+    
+    .container-message{
+    
+        left: 80px;
+        top: 100px;
+    }
+    
+}
+
+@media(max-width: 768px){
+    .box-content{
+        width: 446px;
+        height: 446px;
+    }
+    
+    .img-registred{
+        position: absolute;
+        width: 446px;
+        height: 446px;
+    }
+    
+    .container-message{
+    
+        left: 30px;
+        top: 50px;
+        width: 350px;
+        height: 300px;
+    }
+    .message{
+        font-size: 35px;
+    }
+    
+    .container-message > a{
+        font-size: 18px;
+
+        padding: 15px 15px;
+        margin: 60px 60px 20px;
+    }
+    
+}
+
+@media(max-width: 446px){ /*mobile*/
+    .box-content{
+        width: 320px;
+        height: 400px;
+    }
+    
+    .img-registred{
+        position: absolute;
+        width: 320px;
+        height: 400px;
+    }
+    
+    .container-message{
+    
+        left: 10px;
+        top: 50px;
+        width: 250px;
+        height: 300px;
+    }
+    .message{
+        font-size: 24px;
+    }
+    
+    .container-message > a{
+        font-size: 18px;
+
+        padding: 15px 15px;
+        margin: 60px 10px 20px;
+    }
+}
