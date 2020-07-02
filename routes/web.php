@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('about', function () {
-    return View::make('about');
+    return View('about');
 });
 
 Auth::routes();
