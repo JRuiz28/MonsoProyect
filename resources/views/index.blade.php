@@ -34,8 +34,38 @@
                 <li class="nav__item nav__item--link"> <a class="nav__link" href="{{ url('/') }}"> Inicio </a> </li>
                 <li class="nav__item nav__item--link"> <a class="nav__link" href="{{ url('catalogue') }}"> Catálogo </a> </li>
                 <li class="nav__item nav__item--link"> <a class="nav__link" href="{{ url('about') }}"> Acerca de </a> </li>
+           
+                @guest
+                    <li class="nav__item">
+                        <a class="nav__link" href="{{ route('login') }}">Iniciar Sesión</a>
+                    </li>
+                    <!--
+                    @ if (Route::has('register'))
+                        <li class="nav__item">
+                            <a class="nav__link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                        </li>
+                    @ endif
+                    -->
+                @else
+                    <li class="nav-item dropdown">
+                        <a class="nav__link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
 
-                <li class="nav__item nav__item--login"> <a class="nav__link" href="{{ route('login') }}"> Iniciar Sesión </a> </li>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </div>
+                    </li>
+                @endguest
+
             </ul>
         </nav>
     </header>
@@ -45,7 +75,7 @@
         <article class="chapter">
             <div class="box-1">
                 <img class="img-horizontal" src="img\portada-1.jpg" alt="Fondo del logo">
-                <SPAn>Monso Cosmético Natural</SPAn>  
+                <span>Monso Cosmético Natural</span>  
             </div>
         </article>
         <article class="chapter">
