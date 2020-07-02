@@ -99,3 +99,27 @@
     right: 0;
     left: auto;
 }
+
+@media (max-width: 1000px){
+        
+    .nav__list{
+        width: auto;
+        padding: 10px 6px;
+        flex-wrap: wrap;
+    }
+
+    .nav__item--login{
+    }
+
+    .nav__item--logo{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 35px;
+    }
+
+    .nav{
+        height: auto;
+        padding-bottom: 8px;
+    }
+}
