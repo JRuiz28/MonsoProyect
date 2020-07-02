@@ -12,9 +12,36 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function () {
+    return View('index');
+});
 
 Route::get('about', function () {
     return View('about');
+});
+
+Route::get('product', function () {
+    return View('product');
+});
+
+Route::get('catalogue', function () {
+    return View('catalogue');
+});
+
+Route::get('registered', function () {
+    return View('registered');
+});
+
+Route::get('registerProduct', function () {
+    return View('registerProduct');
+});
+
+Route::get('registerUser', function () {
+    return View('registerUser');
+});
+
+Route::get('contact', function () {
+    return View('contact');
 });
 
 Auth::routes();

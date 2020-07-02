@@ -1,8 +1,8 @@
-<?php
-	require('Header.php');
-	echo '	<link rel="stylesheet" href="CSS/registered.css">';
-
-?>
+@extends('HeadFoot')
+@section('header')
+    @parent
+@endsection
+@section('content')
 	<!--End - Navbars-->
 
 	
@@ -11,7 +11,7 @@
 		<section class="container-body">
 			<article>
 
-				<img class="img-registred" src="img\registred.jpg" alt="">
+				<img class="img-registred" src="static\img\registred.jpg" alt="">
 				<div class="container-message">
 					<div>
 						<span class="message">Usuario guardado exitosamente. </span><i class="fas fa-laugh-beam message"></i>
@@ -25,6 +25,7 @@
 	<!--End - body-->
 	
 	<!--start Footer-->
-<?php
-	require('Footer.php');
-?>
+@endsection
+@section('footer')
+	@parent
+@endsection

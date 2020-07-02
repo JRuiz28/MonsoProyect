@@ -1,6 +1,8 @@
-<?php
-	require('Header.php');
-?>
+@extends('HeadFoot')
+@section('header')
+    @parent
+@endsection
+@section('content')
 	<!--End - Navbars-->
 
 	<!--start body-->
@@ -8,7 +10,7 @@
 		<section>
 			<article class="chapter">
 				<div class="box-1">
-					<img class="img-horizontal" src="img\portada-1.jpg" alt="Fondo del logo">
+					<img class="img-horizontal" src="static\img\portada-1.jpg" alt="Fondo del logo">
 					<SPAn>Monso Cosmético Natural</SPAn>  
 				</div>
 			</article>
@@ -30,7 +32,7 @@
 			</article>
 			<article class="chapter">
 				<div class="box-3">
-					<img src="img\img-3.jpg" alt="Modelo Karol">
+					<img src="static\img\img-3.jpg" alt="Modelo Karol">
 
 					<span class="title">Salud es cuidarse</span>
 					<div class="box-p">
@@ -51,13 +53,13 @@
 						</Button>
 					</div>
 					
-					<img src="img\img-4.jpg" alt="Modelo Jack">
+					<img src="static\img\img-4.jpg" alt="Modelo Jack">
 				</div>
 
 			</article>
 			<article class="chapter">
 				<div class="box-5">
-					<img src="img\img-5.jpg" alt="Resgístrese con nosotros">
+					<img src="static\img\img-5.jpg" alt="Resgístrese con nosotros">
 					<span class="title">Regístrate para más información acerca 
 						de nosotros</span>
 					<Button class="view-register">
@@ -70,6 +72,7 @@
 	<!--End - body-->
 	
 	<!--start Footer-->
-<?php
-	require('Footer.php');
-?>
+@endsection
+@section('footer')
+	@parent
+@endsection
