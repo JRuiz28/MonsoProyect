@@ -16,6 +16,10 @@ Route::get('/', function () {
     return View('index');
 });
 
+Route::get('/', function () {
+    return View('index');
+});
+
 Route::get('about', function () {
     return View('about');
 });
@@ -47,3 +51,4 @@ Route::get('contact', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home/create', 'HomeController@create')->name('homeC');

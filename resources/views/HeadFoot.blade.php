@@ -7,58 +7,77 @@
     <title>Monso</title>
 
 	<!--CSS Styles-->
-	<link rel="stylesheet" href="static/css/registered.css">
-	<link rel="stylesheet" href="static/css//index.css">
-	<link rel="stylesheet" href="static/css/footer.css">
+    <link rel="stylesheet" href="static/css/registered.css">
+    <link rel="stylesheet" href="static/css//index.css">
+    <link rel="stylesheet" href="static/css/footer.css">
     <link rel="stylesheet" href="static/css/nav.css">
     <link rel="stylesheet" href="static/css/about.css">
-	<link rel="stylesheet" href="static/css//all.min.css">
     <link rel="stylesheet" href="static/css//css/font-awesome.min.css">
     <link rel="stylesheet" href="static/css/catalogue.css">
     <link rel="stylesheet" href="static/css/registered.css">
     <link rel="stylesheet" href="static/css/registerProduct.css">
-
+	<!-- <link rel="stylesheet" href="static/css/nav.css">
+	<link rel="stylesheet" href="static/css/footer.css">
+	<link rel="stylesheet" href="static/css/all.min.css">
+	<link rel="stylesheet" href="static/css/css/font-awesome.min.css">
+	<link rel="stylesheet" href="static/css/index.css">
+ -->
 	<!--JS-->
 	<script text="text/javaScript" src="JS/index.js"></script>     
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css"
 	></script>
 	
 	
-	<!--Others-->
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <!--Others-->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!--Start Navbars-->
+<body>    <!--Start Navbars-->
     @section('header')
-	<div class="header">
-		<div class="box-background-nav">
-            <section class="container-nav">
+	<header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item nav__item--logo"> <a class="nav__link" href="{{ url('/') }}"> Monso </a> </li> 
+                
+                <li class="nav__item nav__item--link"> <a class="nav__link" href="{{ url('/') }}"> Inicio </a> </li>
+                <li class="nav__item nav__item--link"> <a class="nav__link" href="{{ url('catalogue') }}"> Catálogo </a> </li>
+                <li class="nav__item nav__item--link"> <a class="nav__link" href="{{ url('about') }}"> Acerca de </a> </li>
+           
+                @guest
+                    <li class="nav__item">
+                        <a class="nav__link" href="{{ route('login') }}">Iniciar Sesión</a>
+                    </li>
+                    <!--
+                    @ if (Route::has('register'))
+                        <li class="nav__item">
+                            <a class="nav__link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                        </li>
+                    @ endif
+                    -->
+                @else
+                    <li class="nav-item dropdown">
+                        <a class="nav__link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
 
-                <article class="item-logo">
-					<a href="index.php">
-						<img src="static/img/Logo_MONSO.png" alt="Monso Cosméticos Costa Rica" />
-					</a>
-                </article>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
 
-                <article class="item-link">
-                    <a href="index.php" class="link-home"> <span>Inicio</span> </a>
-                    <a href="catalogue.php" class="link-list"> <span>Catálogo</span> </a>
-                    <a href="about.php" class="link-about-us"> <span>Acerca de</span> </a>
-                </article>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </div>
+                    </li>
+                @endguest
 
-                <article class="item-login">
-                    <a href="registerProduct.php" class="link-registration-module"> <span>Módulo de registro</span> </a>
-                    
-                    <a href="login.php" class="link-login"> 
-					   <span>Iniciar sesión</span>
-					   <i class="fas fa-user"></i>
-                    </a>
-                </article>
-            </section>
-        </div>
-    </div>
+            </ul>
+        </nav>
+    </header>
     @show
     <div class="content">
         @yield('content')
