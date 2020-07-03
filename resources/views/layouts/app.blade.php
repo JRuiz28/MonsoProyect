@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="static/css/footer.css">
 	<link rel="stylesheet" href="static/css/all.min.css">
 	<link rel="stylesheet" href="static/css/css/font-awesome.min.css">
+	<link rel="stylesheet" href="static/css/login.css">
 
 	<!--JS-->
 	<script text="text/javaScript" src="JS/index.js"></script>     
