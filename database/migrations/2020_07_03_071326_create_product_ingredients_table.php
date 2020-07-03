@@ -15,6 +15,11 @@ class CreateProductIngredientsTable extends Migration
     {
         Schema::create('product_ingredients', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('product_id');
+            $table->foreign('product_id')->references('id')->on('products');
+            $table->unsignedBigInteger('ingredient_id');
+            $table->foreign('ingredient_id')->references('id')->on('ingredients');
+
             $table->timestamps();
         });
     }
