@@ -1,10 +1,10 @@
-.div-form-product{
+.container-product{
     /* background: url('img/back-register.jpg'); */
     background-position: center;
     margin: 0% 25%;
 }
 
-form{
+.form{
     font-family: Open Sans Condensed;
     font-style: normal;
     font-weight: 200;
@@ -19,7 +19,7 @@ form{
     height: auto;
 }
 
-form input, select{
+.form .input, .select{
     font-family: Open Sans Condensed;
     font-style: normal;
     font-weight: bold;
@@ -36,7 +36,7 @@ form input, select{
     background-color: transparent;
 }
 
-form .btn-action {
+.form .btn-action {
     font-family: Open Sans Condensed;
     font-style: normal;
     margin: 5px;
@@ -49,12 +49,12 @@ form .btn-action {
     transition: all 0.5s ease;
 }
 
-form .btn-action:hover{
+.form .btn-action:hover{
     background: #58a873;
     color: #fff !important;
 }
 
-form .btn-add{
+.form .btn-add{
     font-family: Open Sans Condensed;
     font-style: normal;
     background-color: #828282;
@@ -66,12 +66,12 @@ form .btn-add{
     transition: all 0.5s ease;
 }
 
-form .btn-add:hover{
+.form .btn-add:hover{
     background: #413f3f;
     color: #fff !important;
 }
 
-form button{
+.form .button{
     font-family: Open Sans Condensed;
     font-style: normal;
     background-color: transparent;
@@ -83,17 +83,17 @@ form button{
     transition: all 0.5s ease;
 }
 
-form button:hover{
+.form .button:hover{
     background: #0e0c0c;
     color: #fff !important;
 }
 
-table{
+.table{
     border: solid;
     size: 0px;
 }
 
-.product-code{
+.container-code{
     align-items: center;
     margin-left: 2%;
 }

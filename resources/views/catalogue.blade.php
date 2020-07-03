@@ -25,7 +25,7 @@
 	<!--End - body-->
 	
 	<!--start Footer-->
-@endsection
-@section('footer')
-	@parent
-@endsection
+	@endsection
+	@section('footer')
+		@parent
+	@endsection

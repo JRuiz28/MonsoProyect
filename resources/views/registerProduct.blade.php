@@ -6,21 +6,21 @@
 	<!--End - Navbars-->
 
 	<!--start body-->
-	<div class="div-form-product" style=" background: url('img/back-register.jpg')">
-		<form>
-			<h1>Registro de producto</h1>
-			<div class="product-code">
-				<input type="text" placeholder="Código de producto">
+	<div class="container-product" style=" background: url('img/back-register.jpg')">
+		<form class="form">
+			<h1 class="form__title">Registro de producto</h1>
+			<div class="container-code">
+				<input class="input" type="text" placeholder="Código de producto">
 				<button type="submit" text="Buscar" class="btn-action"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Buscar</button>
 				<button type="button" text="Limpiar" class="btn-action"><i class="fa fa-eraser" aria-hidden="true"></i>&nbsp;Limpiar</button>
 			</div>
 			<div class="product-name">
-				<input type="text" placeholder="Nombre de producto">
+				<input class="input" type="text" placeholder="Nombre de producto">
 			</div>
-			<div class="table-ingredients">
-				<input type="text" placeholder="Ingredientes">
+			<div class="container-table">
+				<input class="input" type="text" placeholder="Ingredientes">
 				<button type="submit" text="Agregar" class="btn-add"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Agregar</button>
-				<table>
+				<table class="table">
 					<tr>
 						<td>
 							Ingredientes
@@ -32,10 +32,10 @@
 				</table>
 			</div>
 			<div class="description">
-				<input type="text" placeholder="Descripción">
+				<input class="input" type="text" placeholder="Descripción">
 			</div>
 			<div class="cantity">
-				<select id="cantidad" name="cantidad">
+				<select class="select" id="cantidad" name="cantidad">
 					<option value="-1">Cantidad</option>
 					<?php for($i = 0; $i <= 50; $i++): ?>
 						<option value= "<?php echo $i; ?>"> <?php echo $i; ?> </option>
@@ -43,7 +43,7 @@
 				</select>
 			</div>
 			<div class="price">
-				<select id="precio" name="precio">
+				<select class="select" id="precio" name="precio">
 					<option value="-1">Precio</option>
 					<?php for($i = 0; $i <= 10000; $i+=500): ?>
 						<option value= "<?php echo $i; ?>"> <?php echo $i; ?> </option>
@@ -51,13 +51,13 @@
 				</select>		
 			</div>
 			<div class="upload-image">
-				<input type="text" placeholder="Subir imagen">
-				<button type="button" text="Examinar">Examinar</button>
+				<input  class="input" type="text" placeholder="Subir imagen">
+				<button class="button" type="button" text="Examinar">Examinar</button>
 			</div>
 			<div class="action-buttons">
-				<button type="submit" text="Registrar">Registrar</button>
-				<button type="submit" text="Modificar">Modificar</button>
-				<button type="submit" text="Eliminar">Eliminar</button>
+				<button class="button" type="submit" text="Registrar">Registrar</button>
+				<button class="button" type="submit" text="Modificar">Modificar</button>
+				<button class="button" type="submit" text="Eliminar">Eliminar</button>
 			</div>
 		</form>
 	</div>

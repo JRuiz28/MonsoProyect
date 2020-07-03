@@ -12,7 +12,6 @@
 	<link rel="stylesheet" href="static/css/footer.css">
     <link rel="stylesheet" href="static/css/nav.css">
     <link rel="stylesheet" href="static/css/about.css">
-	<link rel="stylesheet" href="static/css//all.min.css">
     <link rel="stylesheet" href="static/css//css/font-awesome.min.css">
     <link rel="stylesheet" href="static/css/catalogue.css">
     <link rel="stylesheet" href="static/css/registered.css">
