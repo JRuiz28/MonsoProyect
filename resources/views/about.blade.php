@@ -1,15 +1,14 @@
-<?php
-	require('Header.php');
-	echo '<link rel="stylesheet" href="CSS/about.css">';
-	echo '<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">';
-?>
-	
+@extends('HeadFoot')
+@section('header')
+    @parent
+@endsection
+@section('content')
 	<!--End - Navbars-->
 
 	<!--start body-->
 	<article class="article-about-us">
 		<div class="img-section">
-			<img class="img-about" src="img\Logo_MONSO.png" alt="Monso Cosméticos Costa Rica">
+			<img class="img-about" src="static/img/Logo_MONSO.png" alt="Monso Cosméticos Costa Rica">
 		</div>
 		<h1>Nuestra empresa</h1>
 
@@ -31,6 +30,7 @@
 	<!--End - body-->
 	
 	<!--start Footer-->
-<?php
-	require('Footer.php');
-?>
+	@endsection
+	@section('footer')
+		@parent
+	@endsection

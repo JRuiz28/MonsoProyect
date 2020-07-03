@@ -1,7 +1,8 @@
-<?php
-	require('Header.php');
-	echo '<link rel="stylesheet" href="CSS/catalogue.css">';
-?>
+@extends('HeadFoot')
+@section('header')
+    @parent
+@endsection
+@section('content')
 	<!--End - Navbars-->
 
 	
@@ -12,7 +13,7 @@
 			<div class="box-products">
 				<div class="item">
 
-					<img src="img/avena.jpeg" alt="">
+					<img src="static/img/avena.jpeg" alt="">
                     <h1>Avena</h1>
                     <p>Jabón natural para piel seca y cuidada.</p>
 					<button>Ver más</button>
@@ -24,6 +25,7 @@
 	<!--End - body-->
 	
 	<!--start Footer-->
-<?php
-	require('Footer.php');
-?>
+@endsection
+@section('footer')
+	@parent
+@endsection

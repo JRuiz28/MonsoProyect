@@ -1,7 +1,8 @@
-<?php
-	require('Header.php');
-	echo '<link rel="stylesheet" href="CSS/registerProduct.css">';
-?>
+@extends('HeadFoot')
+@section('header')
+    @parent
+@endsection
+@section('content')
 	<!--End - Navbars-->
 
 	<!--start body-->
@@ -63,6 +64,7 @@
 	<!--End - body-->
 	
 	<!--start Footer-->
-<?php
-	require('Footer.php');
-?>
+@endsection
+@section('footer')
+	@parent
+@endsection
