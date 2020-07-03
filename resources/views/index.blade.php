@@ -17,7 +17,7 @@
 			<article class="chapter">
 				<div class="box-2">
 
-					<img src="img\img-2.jpg" alt="Modelo Anne">
+					<img src="static\img\img-2.jpg" alt="Modelo Anne">
 
 					<div class="info-right-2">
 						<span class="title">Piel suave</span>
