@@ -13,6 +13,7 @@
 				<span class="item__article--title1" >Monso Cosmético Natural</span> 
 			</div>
 		</article>
+
 		<article class="article__index article__index--2">
 			<div class="container__article container__article--2">
 				
@@ -28,6 +29,7 @@
 				</div>
 			</div>
 		</article>
+		
 		<article class="article__index article__index--3">
 			<div class="container__article container__article--3">
 				<img class="item__article--img3" src="static\img\img-3.jpg" alt="Modelo Karol">

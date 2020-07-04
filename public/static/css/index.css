@@ -200,7 +200,6 @@
     margin: auto;
     width: 1000px;
     height: 696px;
-    /*border: 2px dashed deeppink;*/
     transition: transform 1.5s;
 }
 .item__article--img5{
@@ -243,4 +242,132 @@
     cursor: pointer;
     background: white;
     color: black;
+}
+
+@media(max-width: 1000px){
+        
+    .container__article{
+        width: auto;
+    }
+
+    .item__article--img1{
+        transform: scale(1);
+    }
+
+    .item__article--title1{
+        color: black;
+        font-size: 55px;
+        font-weight: bold;
+    }
+
+    .item__article--img2{
+        width: 90%;
+    }
+
+    .item__article--info2{
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .container__article--2{
+        flex-direction: column;
+    }
+    .item__article--p{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .item__article--button1{
+        margin-bottom: 100px;
+    }
+
+    
+    .container__article--3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .item__article--img3{
+        width: 100%;
+        height: auto;
+        order: 1;
+    }
+    .item__article--title3{
+        font-size: 50px;
+        margin: 0;
+        padding: 0;
+        order: 2;
+    }
+    .item__article--container--p3{
+        order: 3;
+    }
+
+    .article__index--4{
+        height: 170vh;
+        padding-top: 20px;
+    }
+    .item__article--container--left{
+        display: flex;
+        flex-direction: column;
+    }
+    .item__article--p4{
+        padding: 10px;
+    }
+    .item__article--title4{
+        margin-left: 10px;
+        padding: 0;
+    }
+    .container__article--4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .item__article--img4{
+        width: 95%;
+        height: auto;
+        order: 1;
+        padding-top: 80px;
+    }
+    .item__article--container--left{
+        order: 2;
+    }
+
+
+    .container__article--5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item__article--title5{
+        position: absolute;
+        font-size: 32px;
+        color: black;
+    }
+
+    .item__article--img5{
+        width: 100%;
+    }
+
+    .item__article--button2{
+        border: 2px solid black;
+        background: none;
+        margin-top: 380px;
+        width: 180px;
+        height: 55px;
+    }
+    .item__article--button2:hover{
+        background: black;
+        color: white;
+    }
+    .item__article--text--button2{
+        color: black;
+    }
+    
+    .item__article--text--button2:hover{
+        color: white;
+    }
 }
