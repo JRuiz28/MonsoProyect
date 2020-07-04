@@ -35,7 +35,10 @@ Route::get('contact', function () {
     return View('contact');
 });
 
+
 Auth::routes();
 
+
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/home/create', 'HomeController@create')->name('homeC');
+
+Route::post('/registerUser', 'Auth\RegisterController@store');
