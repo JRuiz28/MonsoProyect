@@ -96,7 +96,7 @@
         <article class="footer__left">
             <h1 class="footer__title footer__title--left">Contáctenos</h1>
             <ul class="footer__list footer__list--left">
-                <li class="footer__item footer__item--left"> <a class="footer__link" href="https://api.whatsapp.com/send?phone=+50672017750"> 
+                <li class="footer__item footer__item--left"> <a class="footer__link" href="https://api.whatsapp.com/send?phone=+50672017750" target="_blank"> 
                     <i class="fab fa-whatsapp"></i> <span class="footer__link--text">WhatsApp</span></a> 
                 </li>
                 <li class="footer__item footer__item--left"> <a class="footer__link" href="mailto:jrc2899@gmail.com"> 
