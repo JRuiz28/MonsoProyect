@@ -96,15 +96,23 @@
         <article class="footer__left">
             <h1 class="footer__title footer__title--left">Contáctenos</h1>
             <ul class="footer__list footer__list--left">
-                <li class="footer__item footer__item--left"> <a class="footer__link" href="#"> <i class="fab fa-whatsapp"></i> <span class="footer__link--text">WhatsApp</span></a> </li>
-                <li class="footer__item footer__item--left"> <a class="footer__link" href="#"> <i class="fas fa-envelope"></i> <span class="footer__link--text">Correo electrónico</span></a> </li>
+                <li class="footer__item footer__item--left"> <a class="footer__link" href="https://api.whatsapp.com/send?phone=+50672017750"> 
+                    <i class="fab fa-whatsapp"></i> <span class="footer__link--text">WhatsApp</span></a> 
+                </li>
+                <li class="footer__item footer__item--left"> <a class="footer__link" href="mailto:jrc2899@gmail.com"> 
+                    <i class="fas fa-envelope"></i> <span class="footer__link--text">Correo electrónico</span></a> 
+                </li>
             </ul>
         </article>
         <article class="footer__right">
             <h1 class="footer__title footer__title--right">Síganos en</h1>
             <ul class="footer__list footer__list--right">
-                <li class="footer__item footer__item--right"> <a class="footer__link" href="#"> <i class="fab fa-facebook"></i> <span class="footer__link--text">Facebook</span></a> </li>
-                <li class="footer__item footer__item--right"> <a class="footer__link" href="#"> <i class="fab fa-instagram"></i> <span class="footer__link--text">Instagram</span></a> </li>
+                <li class="footer__item footer__item--right"> <a class="footer__link" href="https://www.facebook.com/monsocosmeticanatural/" target="_blank"> 
+                    <i class="fab fa-facebook"></i> <span class="footer__link--text">Facebook</span></a> 
+                </li>
+                <li class="footer__item footer__item--right"> <a class="footer__link" href="https://www.instagram.com/monso.cosmetica.natural/" target="_blank"> 
+                    <i class="fab fa-instagram"></i> <span class="footer__link--text">Instagram</span></a>
+                </li>
             </ul>
         </article>
         <article class="footer__end">
