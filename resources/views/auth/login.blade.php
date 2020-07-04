@@ -5,7 +5,7 @@
 <section class="main">
     
 	<section class="login">
-		<form action="#" class="login__form">
+        <form method="POST" action="{{ route('login') }}" class="login__form">
             <div class="login__exit--button"><a class="login__exit--link" href="{{ url('/') }}"><i class="fas fa-times-circle exit-button-i"></i></a></div>
             
             <h1 class="login__form--title">Cuenta Monso</h1>
