@@ -51,17 +51,17 @@
                 <li class="nav__item nav__item--link"> <a class="nav__link" href="{{ url('about') }}"> Acerca de </a> </li>
            
                 @guest
-                    <li class="nav__item ">
+                    <li class="nav__item nav__item--login">
                         <a class="nav__link" href="{{ route('login') }}">Iniciar Sesión</a>
                     </li>
                 @else
                     @if (Route::has('register'))
-                        <li class="nav__item">
+                        <li class="nav__item ">
                             <a class="nav__link" href="{{ url('registerUser') }}">Registro Usuario</a>
                         </li>
                     @endif
 
-                    <li class="nav__item nav-item dropdown" >
+                    <li class="nav__item nav-item dropdown nav__item--login" >
                         <a class="nav__link nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
