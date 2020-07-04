@@ -2,70 +2,102 @@
     margin: 0px;
 }
 
-.chapter{
+.container--index{
     width: 100%;
-    height: 700px;
-    background: white;
+    height: auto;
 }
 
-.chapter:nth-of-type(odd){
-    background: #F5F5F5;
+.article__index:nth-of-type(2n){
+    background-color: #F5F5F5;
 }
 
-/*Box 1*/
-
-.box-1{
+.article__index{
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: auto;
+}
+
+.container__article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
     width: 1000px;
-    height: 696px;
-    margin: auto;
-    margin-top: 4px;
+    height: 100%;
+    background: none;
     transition: transform 1.5s;
 }
 
-.box-1 img{
-    margin: auto; /*Focus together*/
-    width: 1000px;
-    height: 600px;
-    padding: 30px 0px;
-    position: absolute;
-    margin-top: 15px;
-    transform: scale(0.9);
+.container__article--1{
+    transform: scale(0.95);
 }
 
-.box-1 span{
+.container__article--1:hover{
+    transform: scale(1);
+}
+
+.article__index--1{
+    height: 94vh;
+}
+
+.item__article--img1{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    z-index: 2;
+}
+
+.item__article--title1{
     position: absolute;
     text-align: center;
-    margin-top: 275px;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif, arial;
     color: white;
     font-size: 96px;
+    z-index: 3;
 }
 
-/*Box 2*/
-
-.box-2{
+.article__index--2{
     display: flex;
-    justify-content: space-between;
-    /*border: 2px dashed sandybrown;*/
-    width: 1000px;
-    height: 700px;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
 }
 
-.box-2 img{
+.item__article--img2{
     width: 490px;
     transform: scale(0.9);
     transition: transform 1.5s;
 }
 
-.box-2 div{
+.item__article--img2{
+    transform: scale(0.95);
+}
+
+.item__article--img2:hover{
+    transform: scale(1);
+}
+
+.item__article--info2{
     width: 490px;
     margin: 100px;
 }
 
-.view-catalogue{
+.item__article--title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    font-size: 96px;
+}
+.item__article--p{
+    margin-top: 0px 0px 120px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+.item__article--button1{
     margin: 70px 80px 0px;
     width: 200px;
     height: 65px;
@@ -74,29 +106,42 @@
     transition: all 0.8s;
 }
 
-/*Box 3*/
+.item__article--button1:hover{
+    cursor: pointer;
+    background: black;
+    color: white;
+}
 
-.box-3{
+.item__article--text--button{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.container__article--3{
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 1000px;
     height: 696px;
     margin: 70px auto;
-    /*border: 2px dashed deepskyblue ;*/
     transition: transform 1.5s;
+    transform: scale(0.95);
 }
 
-.box-3 img{
+.item__article--img3{
     width: 1000px;
     height: 600px;
     position: absolute;
     z-index: 0;
-    transform: scale(0.95);
 }
 
-.box-3 > .title{
-    /*background: rebeccapurple;*/
+.container__article--3:hover{
+    transform: scale(1);
+}
+
+.item__article--title3{
     justify-items: right;
     width: 320px;
     height: 120px;
@@ -106,54 +151,49 @@
     z-index: 1;
 }
 
-.box-3 > .box-p{
-    /*background: rosybrown;*/
+.item__article--container--p3{
     width: 100%;
     height: 120px;
     text-align: right;
     z-index: 1;
 }
 
-.box-p > .info{
+.item__article--p3{
     width: 320px;
     float: right;
     margin-right: 50px;
     z-index: 1;
 }
 
-
-/*Box 4*/
-.box-4{
+.container__article--4{
     display: flex;
     width: 1000px;
     height: 696px;
     margin: auto;
-    /*border: 2px dashed royalblue;*/
 }
-.box-4 > img{
+
+.item__article--img4{
     width: 490px;
     height: 700px;
     transform: scale(0.9);
     transition: transform 1.5s;
 }
+
+.item__article--img4:hover{
+    transform: scale(1);
+}
+
 .box-4 > .info-left{
     margin-top: 30px;
     margin-left: 30px;
 }
-.info-left > p{
+
+.item__article--p4{
     margin-top: 30px;
 }
-.view-product{
-    margin: 70px 80px 0px;
-    width: 200px;
-    height: 65px;
-    border: 2px solid black;
-    background: none;
-    transition: all 0.8s;
-}
 
-/*Box 5*/
-.box-5{
+
+.container__article--5{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,30 +203,27 @@
     /*border: 2px dashed deeppink;*/
     transition: transform 1.5s;
 }
-.box-5 > img{
+.item__article--img5{
     margin-top: 30px;
     width: 1000px;
     margin-bottom: 30px;
     filter: blur(1px);
     position: absolute;
     margin: 0px;
-    z-index: 0;
+    z-index: 2;
 }
-.box-5 > .title{
+.item__article--title5{
+    position: relative;
     margin: 80px 20px 0px;
     height: 400px;
     text-align: center;
     color: white;
     font-weight: bold;
-    z-index: 1;
-    /*background: slateblue;*/
+    z-index: 3;
 }
-.box-5 > button{
+.item__article--button2{
+    z-index: 3;
     margin: auto;
-    z-index: 1;
-}
-.view-register{
-    margin: 70px 80px 0px;
     width: 200px;
     height: 65px;
     color: white;
@@ -195,49 +232,14 @@
     transition: all 0.8s;
 }
 
-/*Title and info*/
-.title{
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: black;
-    font-size: 96px;
-}
-.info{
-    margin-top: 0px 0px 120px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
-}
-.Letter-button{
+.item__article--text--button2{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     letter-spacing: 5px;
     font-weight: bold;
 }
 
-/*event*/
-.box-1:hover{
-    transform: scale(1.05);
-}
-.box-2 img:hover{
-    transform: scale(1);
-}
-.box-3:hover{
-    transform: scale(1.05);
-}
-.box-4 > img:hover{
-    transform: scale(1);
-}
-
-.view-product:hover{
-    cursor: pointer;
-    background: black;
-    color: white;
-}
-.view-catalogue:hover{
-    cursor: pointer;
-    background: black;
-    color: white;
-}
-.view-register:hover{
+.item__article--button2:hover{
     cursor: pointer;
     background: white;
     color: black;
