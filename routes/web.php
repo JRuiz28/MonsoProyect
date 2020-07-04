@@ -41,4 +41,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::post('/registerUser', 'Auth\RegisterController@store');
+Route::post('/registerUser', 'userController@store');
