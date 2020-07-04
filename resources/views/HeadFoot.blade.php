@@ -54,12 +54,12 @@
                     <li class="nav__item ">
                         <a class="nav__link" href="{{ route('login') }}">Iniciar Sesión</a>
                     </li>
+                @else
                     @if (Route::has('register'))
                         <li class="nav__item">
                             <a class="nav__link" href="{{ route('register') }}">Registro Usuario</a>
                         </li>
                     @endif
-                @else
 
                     <li class="nav__item nav-item dropdown" >
                         <a class="nav__link nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
