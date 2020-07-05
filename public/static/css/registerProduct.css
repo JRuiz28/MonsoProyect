@@ -61,6 +61,7 @@
 
 .form__input,
 .form__select{
+    color: #043552;
     width: 50%;
     height: 36px;
     font-family: 'Open Sans Condensed';
