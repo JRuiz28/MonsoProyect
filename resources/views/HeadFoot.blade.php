@@ -47,6 +47,9 @@
                 @else
                     @if (Route::has('register'))
                         <li class="nav__item ">
+                            <a class="nav__link" href="{{ url('registerProduct') }}">Registro producto</a>
+                        </li>
+                        <li class="nav__item ">
                             <a class="nav__link" href="{{ url('registerUser') }}">Registro Usuario</a>
                         </li>
                     @endif
