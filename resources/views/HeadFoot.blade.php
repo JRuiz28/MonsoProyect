@@ -8,25 +8,21 @@
 
 	<!--CSS Styles-->
     <link rel="stylesheet" href="static/css/registered.css">
-    <link rel="stylesheet" href="static/css//index.css">
+    <link rel="stylesheet" href="static/css/index.css">
     <link rel="stylesheet" href="static/css/footer.css">
     <link rel="stylesheet" href="static/css/nav.css">
     <link rel="stylesheet" href="static/css/about.css">
-    <link rel="stylesheet" href="static/css//css/font-awesome.min.css">
     <link rel="stylesheet" href="static/css/catalogue.css">
     <link rel="stylesheet" href="static/css/registered.css">
     <link rel="stylesheet" href="static/css/registerProduct.css">
-	<!-- <link rel="stylesheet" href="static/css/nav.css">
-	<link rel="stylesheet" href="static/css/footer.css">
-	<link rel="stylesheet" href="static/css/all.min.css">
-	<link rel="stylesheet" href="static/css/css/font-awesome.min.css">
-	<link rel="stylesheet" href="static/css/index.css">
- -->
-	<!--JS-->
-	<script text="text/javaScript" src="JS/index.js"></script>     
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css"
-	></script>
-	
+    <link rel="stylesheet" href="static/css/app.css">
+
+	<!--JS-->    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4251707850.js" crossorigin="anonymous"></script>
+    
 	
     <!--Others-->
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
@@ -45,19 +41,18 @@
                 <li class="nav__item nav__item--link"> <a class="nav__link" href="{{ url('about') }}"> Acerca de </a> </li>
            
                 @guest
-                    <li class="nav__item">
+                    <li class="nav__item nav__item--login">
                         <a class="nav__link" href="{{ route('login') }}">Iniciar Sesión</a>
                     </li>
-                    <!--
-                    @ if (Route::has('register'))
-                        <li class="nav__item">
-                            <a class="nav__link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                        </li>
-                    @ endif
-                    -->
                 @else
-                    <li class="nav-item dropdown">
-                        <a class="nav__link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    @if (Route::has('register'))
+                        <li class="nav__item ">
+                            <a class="nav__link" href="{{ url('registerUser') }}">Registro Usuario</a>
+                        </li>
+                    @endif
+
+                    <li class="nav__item nav-item dropdown nav__item--login" >
+                        <a class="nav__link nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 
@@ -65,7 +60,7 @@
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
+                                Cerrar sesión
                             </a>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -82,43 +77,40 @@
     <div class="content">
         @yield('content')
     </div>
-    @section('footer') 
+
+@section('footer') 
+
 <div class="footer">
-    <div class="box-background-footer">
-            <section class="container-info">
 
-                <article class="item-Contact-Us">
-                    <h2 class="title-foot">Contáctenos</h2>
-                    <ul>
-                        <li><a class="link-foot" href="#">
-                            <i class="fa fa-whatsapp" aria-hidden="true"></i></i> Whatsapp</a></li>
-                        <li><a class="link-foot" href="#">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-</i> Correo electrónico</a></li>
-                    </ul>
-                </article>
+    <section class="footer">
+        <article class="footer__left">
+            <h1 class="footer__title footer__title--left">Contáctenos</h1>
+            <ul class="footer__list footer__list--left">
+                <li class="footer__item footer__item--left"> <a class="footer__link" href="https://api.whatsapp.com/send?phone=+50672017750" target="_blank"> 
+                    <i class="fab fa-whatsapp"></i> <span class="footer__link--text">WhatsApp</span></a> 
+                </li>
+                <li class="footer__item footer__item--left"> <a class="footer__link" href="mailto:monso.cosmetica.natural@gmail.com"> 
+                    <i class="fas fa-envelope"></i> <span class="footer__link--text">Correo electrónico</span></a> 
+                </li>
+            </ul>
+        </article>
+        <article class="footer__right">
+            <h1 class="footer__title footer__title--right">Síganos en</h1>
+            <ul class="footer__list footer__list--right">
+                <li class="footer__item footer__item--right"> <a class="footer__link" href="https://www.facebook.com/monsocosmeticanatural/" target="_blank"> 
+                    <i class="fab fa-facebook"></i> <span class="footer__link--text">Facebook</span></a> 
+                </li>
+                <li class="footer__item footer__item--right"> <a class="footer__link" href="https://www.instagram.com/monso.cosmetica.natural/" target="_blank"> 
+                    <i class="fab fa-instagram"></i> <span class="footer__link--text">Instagram</span></a>
+                </li>
+            </ul>
+        </article>
+        <article class="footer__end">
+            <h5 class="footer__end--menssage">Todos los derechos reservados.</h5>
+            <h6 class="footer__end--menssage">&copy; 2020 </h6>
+        </article>
+    </section>
 
-                <article class="item-follow-us">
-                    <h2 class="title-foot">Síguenos en</h2>
-                    <ul>
-                        <li>
-                            <a class="link-foot" href="#">
-                            <i class="fa fa-facebook" aria-hidden="true"></i></i> Facebook</a></li>
-                        <li><a class="link-foot" href="#">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-</i> Instagram</a></li>
-                    </ul>
-                </article>
-
-                <article class="item-copyright">
-                    <span>
-                        <i class="fa fa-copyright" aria-hidden="true"></i></i> 2020 - Todos los derechos reservados.
-                    </span>
-                </article>
-
-            </section>
-
-        </div>
         <!--End - Footer-->
     </div>
     @show

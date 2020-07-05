@@ -29,7 +29,6 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
      * Create a new controller instance.
@@ -50,7 +49,10 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
+            'role' => ['required', 'string', 'max:12'],
             'name' => ['required', 'string', 'max:255'],
+            'surname' => ['required', 'string', 'max:255'],
+            'birth_date' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
@@ -65,9 +67,42 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
+            'role' => $data['role'],
             'name' => $data['name'],
+            'surname' => $data['surname'],
+            'birth_date' => $data['birth_date'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+    }
+
+    public function store(Request $request){
+        
+        dd($request->all()); 
+        
+        $validatedData = $request -> validate([
+            'role' => ['required', 'string', 'max:12'],
+            'name' => ['required', 'string', 'max:255'],
+            'surname' => ['required', 'string', 'max:255'],
+            'birth_date' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ]);
+
+        
+        $User =new User(); 
+
+        $User->role = $validatedData['role'];
+        $User->name = $validatedData['name'];
+        $User->surname = $validatedData['surname'];
+        $User->birth_date = $validatedData['birth_date'];
+        $User->email = $validatedData['email'];
+        $User->phone = $validatedData['phone'];
+        $User->address = $validatedData['address'];
+        
+        $User->save();
+        
+        $status = "¡Usuario registrado de manera exitosa!";
+        return back()->with(compact('status'));
     }
 }
