@@ -1,14 +1,4 @@
-@extends('HeadFoot')
-@section('header')
-    @parent
-@endsection
-@section('content')
-	<!--start body-->
-	Registrar usuario
-	<!--End - body-->
-	
-	<!--start Footer-->
-@endsection
-@section('footer')
-	@parent
-@endsection
+@extends('errors::layout')
+
+@section('title', '403 - Acceso no autorizado')
+@section('message', 'Acceso no autorizado')
