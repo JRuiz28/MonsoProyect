@@ -21,8 +21,9 @@
 				<img class="item__form--img" src="static/img/back-register.jpg" alt="Imagen de fondo">
 					
 				<div class="bg__product"></div>
-				<form class="form form__product" action="">
-						<!-- csnoseqie-->
+			<form class="form form__product" action="{{ url('registerProduct')}}" method="POST">
+					@csrf
+
 					<span class="form__title">Registro de producto</span>
 					
 					<div class="form__productCode">
@@ -49,7 +50,7 @@
 							<tfoot>
 								<tr>
 									<th>Avena</th>
-									<th> <button type="submit" class="form__button">Quitar</button> </th>
+									<th> <button type="button" class="form__button">Quitar</button> </th>
 								</tr>
 							</tfoot>
 						</table>
@@ -80,8 +81,8 @@
 					</div>
 					<div class="form__action-buttons">
 						<button class="form__button" type="submit" text="Registrar">Registrar</button>
-						<button class="form__button" type="submit" text="Modificar">Modificar</button>
-						<button class="form__button" type="submit" text="Eliminar">Eliminar</button>
+						<button class="form__button" type="button" text="Modificar">Modificar</button>
+						<button class="form__button" type="button" text="Eliminar">Eliminar</button>
 					</div>
 				</form>
 			</div>
