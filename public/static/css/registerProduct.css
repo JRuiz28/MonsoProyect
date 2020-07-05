@@ -1,47 +1,99 @@
-.div-form-product{
-    /* background: url('img/back-register.jpg'); */
-    background-position: center;
-    margin: 0% 25%;
+*{
+    padding: 0;
+    margin: 0;
 }
 
-form{
-    font-family: Open Sans Condensed;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 65px;
-    color: #3A4F41;
-    background: rgba(245, 245, 245, 0.8);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
-    margin: 0% 20%;
-    width: 60%;
+.container__form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: auto;
 }
 
-form input, select{
-    font-family: Open Sans Condensed;
+.container__form--img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: violet;
+}
+
+.item__form--img{
+    width: 100%;
+    height: 100%;
+}
+
+.bg__product{
+    background: white;
+    width: 60%;
+    height: 86%;
+    border-radius: 12px;
+    opacity: 0.5;
+ 
+    position: absolute;
+    z-index: 5;
+}
+
+.form__product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 25px;
+    width: 60%;
+    height: 86%;
+ 
+    position: absolute;
+    z-index: 6;
+}
+
+.form__title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.form__productCode{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.form__input,
+.form__select{
+    width: 50%;
+    height: 36px;
+    font-family: 'Open Sans Condensed';
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    font-size: 14px;
-    margin: 5px;
-    height: 20%;
-    width: 40%;
+    font-size: 22px;
     align-content: center;
     background: inherit;
     border-style: solid;
     border:none;
-    border-bottom:2px solid #828282;
+    border-bottom:2px solid #637373;
     background-color: transparent;
 }
 
-form .btn-action {
-    font-family: Open Sans Condensed;
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #043552;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #043552;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #043552;
+  }
+
+.form__button{
+    font-family: Open  Condensed, sans-serif, arial;
     font-style: normal;
     margin: 5px;
-    background-color: #3A4F41;
-    border-radius: 8px;
+    background-color: #637372;
+    border-radius: 4px;
     color: white;
     font-weight: bold;
     width: 100px;
@@ -49,86 +101,42 @@ form .btn-action {
     transition: all 0.5s ease;
 }
 
-form .btn-action:hover{
-    background: #58a873;
-    color: #fff !important;
+.form__table{
+    margin-top: 25px;
+    border: 1px solid white;
+    padding: 10px;
+    width: 50%;
 }
 
-form .btn-add{
-    font-family: Open Sans Condensed;
-    font-style: normal;
-    background-color: #828282;
-    border-radius: 8px;
-    color: white;
+.form__table--title{
+    font-size: 16px;
     font-weight: bold;
-    width: 100px;
-    height: 30px;
-    transition: all 0.5s ease;
+    color: #043552;
 }
 
-form .btn-add:hover{
-    background: #413f3f;
-    color: #fff !important;
+.form__button:hover{
+    background: #D1F3F3;
+    color: #000 !important;
 }
 
-form button{
-    font-family: Open Sans Condensed;
-    font-style: normal;
-    background-color: transparent;
-    border-radius: 8px;
-    color: gray;
-    font-weight: bold;
-    width: 100px;
-    height: 30px;
-    transition: all 0.5s ease;
+.form__action-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    height: auto;
+    
 }
 
-form button:hover{
-    background: #0e0c0c;
-    color: #fff !important;
-}
+@media (max-width: 1000px){
+    
+    .bg__product{
+        width: 90%;
+        height: 90%;
+    }
 
-table{
-    border: solid;
-    size: 0px;
-}
-
-.product-code{
-    align-items: center;
-    margin-left: 2%;
-}
-
-.product-name{
-    align-items: center;
-    margin-left: 2%;
-}
-
-.table-ingredients{
-    align-items: center;
-    margin-left: 2%;
-}
-
-.description{
-    align-items: center;
-    margin-left: 2%;
-}
-
-.cantity{
-    align-items: center;
-    margin-left: 2%;
-}
-
-.price{
-    align-items: center;
-    margin-left: 2%;
-}
-
-.upload-image{
-    align-items: center;
-    margin-left: 2%;
-}
-
-.action-buttons{
-    align-content: center;
-    margin-left: 15%;
+    .form__product{
+        width: 90%;
+        height: 90%;
+    }  
 }
