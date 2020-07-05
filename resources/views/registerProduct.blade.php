@@ -27,16 +27,22 @@
 					<span class="form__title">Registro de producto</span>
 					
 					<div class="form__productCode">
-						<input type="text" class="form__input form__input" placeholder="Código de producto">
+						<input type="text" class="form__input form__input" placeholder="Código de producto" name="id" id="id">
 						<button type="button" text="Buscar" class="form__button"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Buscar</button>
 						<button type="button" text="Limpiar" class="form__button"><i class="fa fa-eraser" aria-hidden="true"></i>&nbsp;Limpiar</button>
 					</div>
 					
 					<div class="product-name">
-						<input class="form__input" type="text" placeholder="Nombre de producto">
+						<input class="form__input" type="text" placeholder="Nombre de producto" name="name" id="name">
 					</div>
 					<div class="table-ingredients">
 						<input class="form__input" type="text" placeholder="Ingredientes">
+						
+						<select class="form__select" name='ingredients_id' id="selectIngredient_id" required>
+							@foreach($ingredients as $ingredient)
+								<option value="{{$ingredient['id']}}">{{$ingredient['name']}}</option>
+							@endforeach
+						</select>
 						<button type="submit" text="Agregar" class="form__button"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Agregar</button>
 
 						<table class="display form__table" cellspacing="0">
@@ -57,10 +63,10 @@
 
 					</div>
 					<div class="form__description">
-						<input class="form__input" type="text" placeholder="Descripción">
+						<input class="form__input" type="text" placeholder="Descripción" name="description">
 					</div>
 					<div class="form__quantity">
-						<select class="form__select" id="quantity" name="cantidad">
+						<select class="form__select" id="quantity" name="stock">
 							<option value="-1">Cantidad</option>
 							<?php for($i = 0; $i <= 50; $i++): ?>
 								<option value= "<?php echo $i; ?>"> <?php echo $i; ?> </option>
@@ -68,7 +74,7 @@
 						</select>
 					</div>
 					<div class="form__price">
-						<select class="form__select" id="price" name="precio">
+						<select class="form__select" id="price" name="price">
 							<option value="-1">Precio</option>
 							<?php for($i = 0; $i <= 10000; $i+=500): ?>
 								<option value= "<?php echo $i; ?>"> <?php echo $i; ?> </option>
@@ -76,7 +82,7 @@
 						</select>		
 					</div>
 					<div class="form__upload-image">
-						<input class="form__input" type="text" placeholder="Subir imagen">
+						<input class="form__input" type="text" placeholder="Subir imagen" name="image_path	">
 						<button class="form__button" type="button" text="Examinar">Examinar</button>
 					</div>
 					<div class="form__action-buttons">

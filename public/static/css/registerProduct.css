@@ -3,6 +3,20 @@
     margin: 0;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #043552;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #043552;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #043552;
+}
+
+
 .container__form{
     display: flex;
     justify-content: center;
@@ -16,7 +30,6 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: violet;
 }
 
 .item__form--img{
@@ -75,19 +88,6 @@
     border-bottom:2px solid #637373;
     background-color: transparent;
 }
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #043552;
-    opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #043552;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #043552;
-  }
 
 .form__button{
     font-family: Open  Condensed, sans-serif, arial;
