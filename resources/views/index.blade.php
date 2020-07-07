@@ -9,22 +9,22 @@
 	<section class="container--index">
 		<article class="article__index article__index--1">
 			<div class="container__article container__article--1">
-				<img class="item__article--img1" src="static\img\portada-1.jpg" alt="Imagen de fondo">
-				<span class="item__article--title1" >Monso Cosmético Natural</span> 
+				<img class="container__item--img1" src="static\img\portada-1.jpg" alt="Imagen de fondo">
+				<span class="container__item--title1" >Monso Cosmético Natural</span> 
 			</div>
 		</article>
 
 		<article class="article__index article__index--2">
 			<div class="container__article container__article--2">
 				
-				<img class="item__article--img2" src="static\img\img-2.jpg" alt="Modelo Anne">
+				<img class="container__item--img2" src="static\img\img-2.jpg" alt="Modelo Anne">
 
-				<div class="item__article--info2">
-					<span class="item__article--title">Piel suave</span>
-					<p class="item__article--p">
+				<div class="container__item--info2">
+					<span class="container__item--title2">Piel suave</span>
+					<p class="container__item--paragraph">
 						Contamos con variedad de jabones artesanales para que tu pies esté siempre suave. </p>
-					<Button class="item__article--button1">
-						<span class="item__article--text--button">Ver Catálogo</span>
+					<Button class="container__item--button1">
+						<span class="container__item--text--button">Ver Catálogo</span>
 					</Button>
 				</div>
 			</div>
@@ -32,11 +32,11 @@
 		
 		<article class="article__index article__index--3">
 			<div class="container__article container__article--3">
-				<img class="item__article--img3" src="static\img\img-3.jpg" alt="Modelo Karol">
+				<img class="container__item--img3" src="static\img\img-3.jpg" alt="Modelo Karol">
 
-				<span class="item__article--title item__article--title3">Salud es cuidarse</span>
-				<div class="item__article--container--p3">	
-					<p class="item__article--p item__article--p3">Cuente con nuestros
+				<span class="container__item--title container__item--title3">Salud es cuidarse</span>
+				<div class="container__item--container--p3">	
+					<p class="container__item--paragraph container__item--p3">Cuente con nuestros
 						mejores productos </p>
 				</div>
 					
@@ -45,24 +45,24 @@
 		<article class="article__index article__index--4">
 			<div class="container__article container__article--4">
 
-				<div class="item__article--container--left">
-					<span class="item__article--title item__article--title4">Luzca bien siempre</span>
-					<p class="item__article--p item__article--p4">Mira uno de los productos favoritos de nuestros clientes. </p>
-					<Button class="item__article--button1">
-						<span class="item__article--text--button">Ver producto</span>
+				<div class="container__item--container--left">
+					<span class="container__item--title article__item--title4">Luzca bien siempre</span>
+					<p class="container__item--paragraph article__item--p4">Mira uno de los productos favoritos de nuestros clientes. </p>
+					<Button class="container__item--button1">
+						<span class="container__item--text--button">Ver producto</span>
 					</Button>
 				</div>
 				
-				<img class="item__article--img4" src="static\img\img-4.jpg" alt="Modelo Jack">
+				<img class="container__item--img4" src="static\img\img-4.jpg" alt="Modelo Jack">
 			</div>
 		</article>
 		<article class="article__index article__index--5">
 				<div class="container__article--5">
-					<img class="item__article--img5" src="static\img\img-5.jpg" alt="Resgístrese con nosotros">
-					<span class="item__article--title item__article--title5">Regístrate para más información acerca 
+					<img class="container__item--img5" src="static\img\img-5.jpg" alt="Regístrese con nosotros">
+					<span class="container__item--title container__item--title5">Regístrate para más información acerca 
 						de nosotros</span>
-					<Button class="item__article--button2">
-						<span class="item__article--text--button2">Registrarme</span>
+					<Button class="container__item--button2">
+						<span class="container__item--text--button2">Registrarme</span>
 					</Button>
 				</div>
 		</article>
