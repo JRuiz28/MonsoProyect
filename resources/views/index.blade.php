@@ -6,20 +6,6 @@
 	<!--End - Navbars-->
 
 	<!--start body-->
-<<<<<<< HEAD
-	<Section class="main-section">
-		<section class="subsection">
-			<article class="chapter">
-				<div class="box-1">
-					<img class="img-horizontal" src="static\img\portada-1.jpg" alt="Fondo del logo">
-					<SPAn>Monso Cosmético Natural</SPAn>  
-				</div>
-			</article>
-			<article class="chapter">
-				<div class="box-2">
-
-					<img src="static\img\img-2.jpg" alt="Modelo Anne">
-=======
 	<section class="container--index">
 		<article class="article__index article__index--1">
 			<div class="container__article container__article--1">
@@ -27,7 +13,6 @@
 				<span class="item__article--title1" >Monso Cosmético Natural</span> 
 			</div>
 		</article>
->>>>>>> 22da5aa9f6138bd8d0079906b4b1bbbc15a2a8af
 
 		<article class="article__index article__index--2">
 			<div class="container__article container__article--2">
