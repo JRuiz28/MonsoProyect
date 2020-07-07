@@ -51,6 +51,21 @@
   transform: scale(0.95);
 }
 
+.article__paragraph-about {
+  float: inline-start;
+  text-align: justify;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 5%;
+}
+
+.article-about {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 10%;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
 @media (max-width: 1000px) {
   .article__index--4 {
     height: 170vh;
@@ -272,6 +287,11 @@
   font-size: 18px;
   letter-spacing: 5px;
   font-weight: bold;
+}
+
+.container__img-about {
+  margin-left: 25%;
+  width: 50%;
 }
 
 @media (max-width: 1000px) {

@@ -30,6 +30,21 @@
             transform: scale(0.95);
         }
     } 
+    &__paragraph-about{
+        float: inline-start;
+        text-align: justify;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 5%;
+    }
+}
+
+.article-about{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    align-items: center;
+    font-family: $openSans;
+
 }
 
 @media (max-width: 1000px){
@@ -42,3 +57,4 @@
         }
     }
 }
+
