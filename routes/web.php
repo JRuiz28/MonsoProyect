@@ -46,7 +46,7 @@ Auth::routes();
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('index');
-Route::post('/registerUser', 'userController@store');
+// Route::post('/registerUser', 'userController@store');
 
 Route::get('/product/registerProduct', 'ProductController@create');
 Route::post('/registerProduct', 'ProductController@store');
