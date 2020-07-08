@@ -23,10 +23,6 @@ Route::get('registered', function () {
     return View('registered');
 });
 
-Route::get('registerProduct', function () {
-    return View('registerProduct');
-});
-
 Route::get('registerUser', function () {
     return View('registerUser');
 });
@@ -44,5 +40,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/registerUser', 'userController@store');
 
+Route::get('/product/registerProduct', 'ProductController@create');
 Route::post('/registerProduct', 'ProductController@store');
-Route::get('/registerProduct', 'ProductController@create');

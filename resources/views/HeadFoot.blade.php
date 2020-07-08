@@ -7,15 +7,14 @@
     <title>Monso</title>
 
 	<!--CSS Styles-->
-    <link rel="stylesheet" href="static/css/registered.css">
-    <link rel="stylesheet" href="static/css/index.css">
-    <link rel="stylesheet" href="static/css/footer.css">
-    <link rel="stylesheet" href="static/css/nav.css">
-    <link rel="stylesheet" href="static/css/about.css">
-    <link rel="stylesheet" href="static/css/catalogue.css">
-    <link rel="stylesheet" href="static/css/registered.css">
-    <link rel="stylesheet" href="static/css/registerProduct.css">
-    <link rel="stylesheet" href="static/css/app.css">
+    <link rel="stylesheet" href="{{ asset('static/css/registered.css') }}">
+    <link rel="stylesheet" href="{{ asset('static/css/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('static/css/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('static/css/nav.css') }}">
+    <link rel="stylesheet" href="{{ asset('static/css/about.css') }}">
+    <link rel="stylesheet" href="{{ asset('static/css/catalogue.css') }}">
+    <link rel="stylesheet" href="{{ asset('static/css/registerProduct.css') }}">
+    <link rel="stylesheet" href="{{ asset('static/css/app.css') }}">
 
 	<!--JS-->    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -27,7 +26,8 @@
     <!--Others-->
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    
 </head>
 <body>    <!--Start Navbars-->
     @section('header')
@@ -47,7 +47,7 @@
                 @else
                     @if (Route::has('register'))
                         <li class="nav__item ">
-                            <a class="nav__link" href="{{ url('registerProduct') }}">Registro producto</a>
+                            <a class="nav__link" href="{{ url('/product/registerProduct') }}">Registro producto</a>
                         </li>
                         <li class="nav__item ">
                             <a class="nav__link" href="{{ url('registerUser') }}">Registro Usuario</a>
