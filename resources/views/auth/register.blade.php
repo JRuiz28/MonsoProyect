@@ -16,7 +16,7 @@
 		</div>
 	@endif
 
-	<form method="POST" action="{{ url('registerUser') }}">
+	<form method="POST" action="{{ url('register') }}">
 		@csrf
 
 		<div class="form-group row">
@@ -65,7 +65,7 @@
 			<label for="birth_date" class="col-md-4 col-form-label text-md-right">Fecha de nacimiento</label>
 
 			<div class="col-md-6">
-				<input id="birth_date" type="text" class="form-control @error('birth_date') is-invalid @enderror" name="birth_date" value="{{ old('birth_date') }}" required autocomplete="birth_date" autofocus>
+				<input id="birth_date" type="date" class="form-control @error('birth_date') is-invalid @enderror" name="birth_date" value="{{ old('birth_date') }}" required autocomplete="birth_date" autofocus>
 
 				@error('birth_date')
 					<span class="invalid-feedback" role="alert">
