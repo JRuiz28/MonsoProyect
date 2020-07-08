@@ -194,6 +194,10 @@
   z-index: 2;
 }
 
+.container__item--img1:hover {
+  transform: scale(1);
+}
+
 .container__item--img2 {
   width: 490px;
   transform: scale(0.95);
@@ -235,6 +239,10 @@
   position: absolute;
   margin: 0px;
   z-index: 2;
+}
+
+.container__item--img5:hover {
+  transform: scale(1);
 }
 
 .container__item--title {

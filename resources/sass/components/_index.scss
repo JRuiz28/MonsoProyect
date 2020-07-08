@@ -81,6 +81,9 @@
             height: auto;
             margin-top: 15px;
             z-index: 2;
+            &:hover{
+                transform: scale(1);
+            }
         }
         &--img2{
             width: 490px;
@@ -116,6 +119,9 @@
             position: absolute;
             margin: 0px;
             z-index: 2;
+            &:hover{
+                transform: scale(1);
+            }
         }
         &--title{
             font-family: $openCondensed;
