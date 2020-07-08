@@ -42,14 +42,10 @@
                 @else
                     @if (Route::has('register'))
                         <li class="nav__item ">
-<<<<<<< HEAD
-                            <a class="nav__link" href="{{ url('register') }}">Registro Usuario</a>
-=======
                             <a class="nav__link" href="{{ url('/product/registerProduct') }}">Registro producto</a>
                         </li>
                         <li class="nav__item ">
-                            <a class="nav__link" href="{{ url('registerUser') }}">Registro Usuario</a>
->>>>>>> rm_Negro
+                            <a class="nav__link" href="{{ url('register') }}">Registro Usuario</a>
                         </li>
                     @endif
 
