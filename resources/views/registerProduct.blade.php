@@ -25,7 +25,7 @@
 						<td class="table__data--ingredients">
 							Ingredientes
 						</td>
-						<td class="table__data--ingredients">
+						<td class="table__data--cantity">
 							Cantidad
 						</td>
 					</tr>
@@ -50,7 +50,7 @@
 					<?php endfor; ?>
 				</select>		
 			</div>
-			<div class="contairner-upload-image">
+			<div class="container-upload-image">
 				<input  class="form__input" type="text" placeholder="Subir imagen">
 				<button class="button" type="button" text="Examinar">Examinar</button>
 			</div>
