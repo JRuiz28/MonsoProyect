@@ -130,6 +130,24 @@
     height: auto;    
 }
 
+.form__ingredients{
+    display: grid;
+    grid-template-columns: 20px 160px;
+    padding-left: 20px;
+    width: auto;
+    height: auto;
+}
+
+.form__ingredients--item{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 5px;
+    height: 15px;
+    font-weight: bold;
+}
+
 @media (max-width: 1000px){
     
     .bg__product{

@@ -42,3 +42,4 @@ Route::post('/registerUser', 'userController@store');
 
 Route::get('/product/registerProduct', 'ProductController@create');
 Route::post('/registerProduct', 'ProductController@store');
+Route::put('/registerProduct', 'ProductController@store');
