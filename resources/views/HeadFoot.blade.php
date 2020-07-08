@@ -21,7 +21,8 @@
     <!--Others-->
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    
 </head>
 <body>    <!--Start Navbars-->
     @section('header')
@@ -40,6 +41,9 @@
                     </li>
                 @else
                     @if (Route::has('register'))
+                        <li class="nav__item ">
+                            <a class="nav__link" href="{{ url('/product/registerProduct') }}">Registro producto</a>
+                        </li>
                         <li class="nav__item ">
                             <a class="nav__link" href="{{ url('register') }}">Registro Usuario</a>
                         </li>

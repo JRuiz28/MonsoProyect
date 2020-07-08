@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #043552;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #043552;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #043552;
+}
+
+
+.container__form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px;
+    background: black;
+}
+
+.container__form--img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.item__form--img{
+    width: 100%;
+    height: 100%;
+}
+
+.bg__product{
+    background: white;
+    width: 60%;
+    height: 100%;
+    border-radius: 12px;
+    opacity: 0.5;
+ 
+    position: absolute;
+    z-index: 5;
+}
+
+.form__product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 25px;
+    width: 60%;
+    height: 100%;
+ 
+    position: absolute;
+    z-index: 6;
+}
+
+.form__title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.form__productCode{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.form__input,
+.form__select{
+    color: #043552;
+    width: 50%;
+    height: 36px;
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    align-content: center;
+    background: inherit;
+    border-style: solid;
+    border:none;
+    border-bottom:2px solid #637373;
+    background-color: transparent;
+}
+
+.form__button{
+    font-family: Open  Condensed, sans-serif, arial;
+    font-style: normal;
+    margin: 5px;
+    background-color: #637372;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    transition: all 0.5s ease;
+}
+
+.form__table{
+    margin-top: 10px;
+    border: 1px solid white;
+    padding: 10px;
+    width: 50%;
+}
+
+.form__table--title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #043552;
+}
+
+.form__button:hover{
+    background: #D1F3F3;
+    color: #000 !important;
+}
+
+.form__action-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    height: auto;    
+}
+
+.form__ingredients{
+    display: grid;
+    grid-template-columns: 20px 160px;
+    padding-left: 20px;
+    width: auto;
+    height: auto;
+}
+
+.form__ingredients--item{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 5px;
+    height: 15px;
+    font-weight: bold;
+}
+
+@media (max-width: 1000px){
+    
+    .bg__product{
+        width: 90%;
+        height: 90%;
+    }
+
+    .form__product{
+        width: 90%;
+        height: 90%;
+    }  
+}
