@@ -53,6 +53,14 @@
 
 }
 
+.center-body{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 85%;
+    margin: auto;
+}
+
 @media (max-width: 1000px){
     .article{
         &__index{

@@ -13,10 +13,10 @@
 			<div class="box-products">
 				<div class="item">
 
-					<img src="static/img/avena.jpeg" alt="">
-                    <h1>Avena</h1>
-                    <p>Jabón natural para piel seca y cuidada.</p>
-					<button>Ver más</button>
+					<img class="item__img-catalogue" src="static/img/avena.jpeg" alt="">
+                    <h1 class="item__title-catalogue">Avena</h1>
+                    <p class="item__paragraph-catalogue">Jabón natural para piel seca y cuidada.</p>
+					<button class="item__button-catalogue">Ver más</button>
 				</div>
 			</div>
 			
