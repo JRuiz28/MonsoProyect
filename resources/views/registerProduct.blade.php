@@ -6,55 +6,55 @@
 	<!--End - Navbars-->
 
 	<!--start body-->
-	<div class="container-product" style=" background: url('img/back-register.jpg')">
+	<div class="container-product" style=" background: url('static/img/back-register.jpg')">
 		<form class="form">
 			<h1 class="form__title">Registro de producto</h1>
 			<div class="container-code">
-				<input class="input" type="text" placeholder="Código de producto">
+				<input class="form__input" type="text" placeholder="Código de producto">
 				<button type="submit" text="Buscar" class="btn-action"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Buscar</button>
 				<button type="button" text="Limpiar" class="btn-action"><i class="fa fa-eraser" aria-hidden="true"></i>&nbsp;Limpiar</button>
 			</div>
-			<div class="product-name">
-				<input class="input" type="text" placeholder="Nombre de producto">
+			<div class="container-product-name">
+				<input class="form__input" type="text" placeholder="Nombre de producto">
 			</div>
 			<div class="container-table">
-				<input class="input" type="text" placeholder="Ingredientes">
+				<input class="form__input" type="text" placeholder="Ingredientes">
 				<button type="submit" text="Agregar" class="btn-add"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Agregar</button>
 				<table class="table">
-					<tr>
-						<td>
+					<tr class="table__row">
+						<td class="table__data--ingredients">
 							Ingredientes
 						</td>
-						<td>
+						<td class="table__data--ingredients">
 							Cantidad
 						</td>
 					</tr>
 				</table>
 			</div>
-			<div class="description">
-				<input class="input" type="text" placeholder="Descripción">
+			<div class="container-description">
+				<input class="form__input" type="text" placeholder="Descripción">
 			</div>
-			<div class="cantity">
-				<select class="select" id="cantidad" name="cantidad">
+			<div class="container-cantity">
+				<select class="form__select" id="cantidad" name="cantidad">
 					<option value="-1">Cantidad</option>
 					<?php for($i = 0; $i <= 50; $i++): ?>
 						<option value= "<?php echo $i; ?>"> <?php echo $i; ?> </option>
 					<?php endfor; ?>
 				</select>
 			</div>
-			<div class="price">
-				<select class="select" id="precio" name="precio">
+			<div class="container-price">
+				<select class="form__select" id="precio" name="precio">
 					<option value="-1">Precio</option>
 					<?php for($i = 0; $i <= 10000; $i+=500): ?>
 						<option value= "<?php echo $i; ?>"> <?php echo $i; ?> </option>
 					<?php endfor; ?>
 				</select>		
 			</div>
-			<div class="upload-image">
-				<input  class="input" type="text" placeholder="Subir imagen">
+			<div class="contairner-upload-image">
+				<input  class="form__input" type="text" placeholder="Subir imagen">
 				<button class="button" type="button" text="Examinar">Examinar</button>
 			</div>
-			<div class="action-buttons">
+			<div class="container-action-buttons">
 				<button class="button" type="submit" text="Registrar">Registrar</button>
 				<button class="button" type="submit" text="Modificar">Modificar</button>
 				<button class="button" type="submit" text="Eliminar">Eliminar</button>

@@ -7,16 +7,13 @@
 
 	
 	<!--start body-->
-	<div class="box-content">
-		<section class="container-body">
-			<article>
-
-				<img class="img-registred" src="static\img\registred.jpg" alt="">
-				<div class="container-message">
-					<div>
-						<span class="message">Usuario guardado exitosamente. </span><i class="fas fa-laugh-beam message"></i>
-					</div>
-					<a href="index.html">Volver al menú principal</a>
+	<div class="container-registered">
+		<section class="container-body-registered">
+			<article class="article-registered">
+				<img class="article__img-registered" src="static\img\registred.jpg" alt="">
+				<div class="container__message-registered">
+						<span class="message-registered">Usuario guardado exitosamente. </span><i class="fas fa-laugh-beam message"></i>
+					<a class="container__link-registered" href="index.html">Volver al menú principal</a>
 				</div>
 			
 			</article>

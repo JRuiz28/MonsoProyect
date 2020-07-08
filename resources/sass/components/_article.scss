@@ -36,6 +36,12 @@
         font-family: 'Open Sans', sans-serif;
         margin-bottom: 5%;
     }
+    &__img-registered{
+        position: absolute;
+        width: 1000px;
+        height: 800px;
+        z-index: 1;
+    }
 }
 
 .article-about{
