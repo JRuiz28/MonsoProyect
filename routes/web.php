@@ -23,8 +23,8 @@ Route::get('registered', function () {
     return View('registered');
 });
 
-Route::get('registerProduct', function () {
-    return View('registerProduct');
+Route::get('create', function () {
+    return View('create');
 });
 
 // Route::get('registerUser', function () {

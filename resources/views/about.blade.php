@@ -12,7 +12,7 @@
 		</div>
 		<h1 class="article-about__title">Nuestra empresa</h1>
 
-		<p class="article__paragraph-about">
+		<p class="article-about__paragraph-about">
 			Somos un emprendimiento familiar creado en enero del 2020,  con la intención de abarcar las necesidades de nuestro clientes enfocándonos en el área de cuidado personal.
 			Manejamos una amplia línea de productos de cosmética natural tales como jabónes sólidos faciales - corporales, jabónes líquidos, cremas, exfoliantes, mascarillas, shampoo, acondionador, bálsamos entre otros.
 			Cabe destacar que todos nuestros productos están elaborados con materia prima de la más alta calidad, teniendo un enfoque 100% natural, utilizando gran variedad de hierbas frescas, infusiones, especies y aceites esenciales.

@@ -16,17 +16,12 @@
 	@endif
 
 	<!--End - body-->
-	 <section class="header">
+	<section class="header">
 		<article class="container__form">
 			<div class="container__form--img">
-				<img class="item__form--img" src={{ asset('static/img/back-register.jpg') }} alt="Imagen de fondo">
-					
-				<div class="bg__product"></div>
-				 
-			<form class="form form__product" method="POST" 
-				action="{{ url('registerProduct')}}"
-				enctype="multipart/form-data"
-			>
+				<form class="form form__product" method="POST" 
+					action="{{ url('registerProduct')}}"
+					enctype="multipart/form-data">
 					@csrf
 
 					<span class="form__title">Registro de producto</span>
@@ -35,11 +30,7 @@
 						<input class="form__input" type="text" placeholder="Nombre de producto" name="nameProduct" id="name">
 					</div>
 
-					<div class="form__ingredients">
-						@foreach($ingredients as $ingredient)
-							<input class="form__ingredients--item" type="checkbox" value="{{$ingredient['id']}}"><span class="form__ingredients--item">{{$ingredient['name']}}</span></option>
-						@endforeach  
-					</div>
+					
 
 
 					<div class="form__description">
@@ -75,7 +66,6 @@
 						<button class="form__button" type="submit" text="Registrar">Registrar</button>
 					</div>
 				</form>
-		
 			</div>
 		</article>
 	</section>
