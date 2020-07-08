@@ -27,9 +27,9 @@ Route::get('registerProduct', function () {
     return View('registerProduct');
 });
 
-Route::get('registerUser', function () {
-    return View('registerUser');
-});
+// Route::get('registerUser', function () {
+//     return View('registerUser');
+// });
 
 Route::get('contact', function () {
     return View('contact');
