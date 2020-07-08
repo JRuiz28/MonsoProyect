@@ -6,7 +6,8 @@
 @section('content')
 	<!--End - Navbars-->
 	
-	<!--start body-->
+    <!--start body-->
+    <section></section>
 	@if (session('status'))
 		<div class="alert alert-success fade show" role="alert">
 			{{ session('status') }}
