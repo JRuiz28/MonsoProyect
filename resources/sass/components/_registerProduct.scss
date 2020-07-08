@@ -10,7 +10,7 @@ margin: 4% 2% 5%;
 }
   
 .form {
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: $openCondensed;
     font-style: normal;
     font-weight: 200;
     font-size: 20px;
@@ -25,7 +25,7 @@ margin: 4% 2% 5%;
         font-weight: bolder;
       }
     &__input &__select {
-        font-family: "Open Sans Condensed", sans-serif;
+        font-family: $openCondensed;
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
@@ -70,7 +70,7 @@ margin: 4% 2% 5%;
         margin-left: 15%;
     }
     &__button {
-        font-family: "Open Sans Condensed", sans-serif;
+        font-family: $openCondensed;
         font-style: normal;
         margin: 5px;
         background-color: #3A4F41;

@@ -30,9 +30,6 @@
 						<input class="form__input" type="text" placeholder="Nombre de producto" name="nameProduct" id="name">
 					</div>
 
-					
-
-
 					<div class="form__description">
 						<input class="form__input"  type="text" placeholder="Descripción" name="description">
 					</div>
