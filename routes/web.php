@@ -41,7 +41,7 @@ Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
-Route::post('/registerUser', 'userController@store');
+// Route::post('/registerUser', 'userController@store');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('index');
