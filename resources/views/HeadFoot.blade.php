@@ -9,6 +9,7 @@
 	<!--CSS Styles-->
 <link rel="stylesheet" href="{{asset('/css/app.css')}}">
 <link rel="stylesheet" href="{{asset('/css/main.css')}}">
+<link rel="stylesheet" href="{{asset('/css/listProduct.css')}}">
 
 
 	<!--JS-->    
@@ -42,7 +43,7 @@
                 @else
                     @if (Route::has('register'))
                         <li class="nav__item ">
-                            <a class="nav__link" href="{{ url('/product/registerProduct') }}">Registro producto</a>
+                            <a class="nav__link" href="{{ url('/product/list') }}">Productos</a>
                         </li>
                         <li class="nav__item ">
                             <a class="nav__link" href="{{ url('register') }}">Registro Usuario</a>
