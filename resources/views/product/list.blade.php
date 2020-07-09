@@ -4,13 +4,9 @@
 @endsection
 @section('content')
 	<!--End - Navbars-->
-	
 	<!--start body-->
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-12">
-						
-				@if (session('status'))
+<div class="container container__body"> <!-- container__body is A SCSS CLASS -->
+	@if (session('status'))
 					<div class="alert alert-success fade show" role="alert">
 						{{ session('status') }}
 						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -19,41 +15,41 @@
 					</div>
 				@endif
 
-
-				<div class="text-center">
-					<h1>Lista de productos</h1>
+    <div class="row justify-content-center" >
+        <div class="container__list col-md-12"> <!-- container__list is A SCSS CLASS -->
+						
+				<div class="div__container--titleList text-center"> <!-- SECONDS CLASS (text-center) IS BOOTSTRAP  -->
+					<h1 class="h1--title" >Lista de productos</h1>
 				</div>
 
-				<div class="text-right" style="margin: 20px 3px;">
-					<a href="{{ url('product/create') }}">Agregar producto</a>
+				<div class="div__container--addProduct text-right">  <!-- SECONDS CLASS (text-rigth) IS BOOTSTRAP  -->
+					<a class="btn btn-success btn-xs" href="{{ url('product/create') }}">Agregar producto</a>
 				</div>
 
-				<table class="table table-bordered" id="MyTable">
+				<table class="table table-bordered" id="table">  <!-- IT'S A BOOTSTRAP-CLASS  -->
 					<thead>
 					<tr>
-						<th class="text-center">ID</th>
 						<th class="text-center">Nombre</th>
-						<th class="text-center">Descripción</th>
 						<th class="text-center">Cantidad</th>
 						<th class="text-center">Precio</th>
-						<th class="text-center">Action </th>
+						<th class="text-center">Acción </th>
 					</tr>
 					</thead>
 					<tbody>
 					@foreach($products as $product)
 						<tr>
-							<td class="text-center">{{ $product->id }}</td>
 							<td class="text-center">{{ $product->name }}</td>
-							<td class="text-center">{{ $product->description }}</td>
 							<td class="text-center">{{ $product->stock }}</td>
 							<td class="text-center">{{ $product->price }}</td>
 							
-								<td class="text-center">
-									<a href="{{ url('product/edit/'.$product->id) }}" class="btn btn-info btn-xs">
-										<span aria-hidden="true">Modificar</span>
+								<td class="text-center"> <!-- SECONDS CLASS (text-center) IS BOOTSTRAP  -->
+
+									<a href="{{ url('product/edit/'.$product->id) }}" class="button__list btn btn-info btn-xs" name="Editar">
+										<i class="fas fa-edit"></i>
 									</a>
-									<a href="{{ url('product/delete/'.$product->id) }}"  type="button" class="btn btn-danger btn-xs" >
-										<span aria-hidden="true">Eliminar</span>
+
+									<a href="{{ url('product/delete/'.$product->id) }}"  type="button" class="button__list btn btn-danger btn-xs" name="Eliminar">
+										<i class="fas fa-trash-alt"></i>
 									</a>
 									
 								</td>
@@ -61,6 +57,7 @@
 					@endforeach
 					</tbody>
 				</table>
+				{{ $products->links() }}
 		</div>
 	</div>
 </div>

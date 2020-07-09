@@ -19,7 +19,7 @@ class ProductController extends Controller
     }
     
     public function list(){
-        $products = product::all();
+        $products = product::paginate(7);
         return view('product.list', compact("products"));
     }
 

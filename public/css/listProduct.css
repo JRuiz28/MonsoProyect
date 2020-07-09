@@ -2,6 +2,18 @@
     padding: 0;
     margin: 0;
 }
+.container__list{
+    width: 70vw;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.75);
+}
+.container__body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
 
 .div__container--titleList{
     margin: 30px 0px;
@@ -10,13 +22,32 @@
 .div__container--addProduct{
     margin: 30px 5px;
 }
-#table{
+
+.table{
     background: #f5f5f5;
 }
+
 .h1--title{
     font-weight: bold;
+    font-size: 50px;
 }
+
 .button__list{
-    margin-top: 5px;
+    margin-top: 2px;
+}
+
+@media(max-width: 1000px){
+    .container__list{
+        width: 100vw;
+        padding: 0px;
+        margin: 0px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 28px -6px rgba(0,0,0,0.75);
+    }
+    .table{
+        width: 100%;
+        font-size: 12px;
+        background: #f5f5f5;
+    }
 }
 
