@@ -1,56 +1,150 @@
-.section{
+$color-primary: #ffff;
+$color-secondary: #f5f5f5;
+$color-tertiary: #3a4f41;
+$font-primary: Open Sans Condensed;
+
+.main{
     font-family: $openCondensed;
     font-style: normal;
     font-weight: 200;
     font-size: 20px;
     line-height: 25px;
-    color: #3A4F41;
-    background: rgba(245, 245, 245, 0.8);
+    color: $color-tertiary;
+    background: $color-primary;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-.article{
-    &__title-product{
-        font-weight: bolder;
-        margin-bottom: 3%;
-    }
-    &__img-product{
-        width: 20%;
-    }
-}
-.container-dataProduct{
-    margin-left: 40%;
-    margin-top: -20%;
     display: flex;
     flex-direction: column;
+    &__container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
-
-.related-products{
-    display: inline-flex;
-    margin-left: 10%;
-}
-
-.container-related{
-    margin-left: 25%;
+.product{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__title{
+        align-self: center;
+        color: $color-tertiary;
+        margin: 5%;
+    }
+    &__imgContainer{
+    width: 100%;
+    }
     &__img{
-        width: 80%;
+        // border: $color-tertiary 1px solid;
+    width: 100%;
+    padding:1%;
+    border-radius: 10px;
+
     }
-    &__button{
-        font-family: $openCondensed;
-        font-style: normal;
-        margin: 5px;
-        background-color: #3A4F41;
-        border-radius: 8px;
-        color: white;
-        font-weight: bold;
-        width: 100px;
-        height: 30px;
-        transition: all 0.5s ease;
-        &:hover {
-            background: #58a873;
-            color: #fff !important;
-        }
+    &__detail{
+        display: flex;
+        flex-direction: column;
+        padding-right: 18px;
+        padding-left: 18px;
+        
     }
 }
+.description{
+    width: 100%;
+    &__title{
+        padding-left: 8px;
+    }
+    &__detail{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+.related{
+    width: 100%;
+    &__title{
+        padding-left: 8px;
+    }
+    &__container{
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+    }
+    &__product{
+        margin:20px  0;
+    }
+    &__imgContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    &__img{
+        width: 100%;
+        padding:1%;
+        border-radius: 10px;
+    }
+    &__btn{
+        width: 50%;
+        align-self: center;
+        margin-top: 10px;
+        border-radius: 10px;
+        height: 15%;
+        width: 40%;
+        color: $color-tertiary;
+        background-color: $color-secondary;
+        border: solid 1px $color-tertiary;
+        font-weight: bold;
+        font-size: x-large;
+        font-family: $font-primary;
+        &:hover {
+            background:$color-tertiary;
+            color:$color-primary;
+             transition: color 0.5s;
+        }
+        
+    }
+}
+
+// .article{
+//     &__title-product{
+//         font-weight: bolder;
+//         margin-bottom: 3%;
+//     }
+//     &__img-product{
+//         width: 20%;
+//     }
+// }
+// // .container-dataProduct{
+// //     margin-left: 40%;
+// //     margin-top: -20%;
+// //     display: flex;
+// //     flex-direction: column;
+// // }
+
+// .related-products{
+//     display: inline-flex;
+//     margin-left: 10%;
+// }
+
+// .container-related{
+//     margin-left: 25%;
+//     &__img{
+//         width: 80%;
+//     }
+//     &__button{
+//         font-family: $openCondensed;
+//         font-style: normal;
+//         margin: 5px;
+//         background-color: #3A4F41;
+//         border-radius: 8px;
+//         color: white;
+//         font-weight: bold;
+//         width: 100px;
+//         height: 30px;
+//         transition: all 0.5s ease;
+//         &:hover {
+//             background: #58a873;
+//             color: #fff !important;
+//         }
+//     }
+// }
