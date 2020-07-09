@@ -71,7 +71,7 @@
 							<!-- <label for="birth_date" class="col-md-4 col-form-label text-md-right">Fecha de nacimiento</label> -->
 
 							<!-- <div class="col-md-6"> -->
-								<input id="birth_date" type="date" class= "register__text @error('birth_date') is-invalid @enderror" name="birth_date" value="{{ old('birth_date') }}" required autocomplete="birth_date" autofocus placeholder="Fecha de nacimiento">
+								<input id="birth_date" type="text" class= "register__text  @error('birth_date') is-invalid @enderror" name="birth_date" value="{{ old('birth_date') }}" required autocomplete="birth_date" autofocus placeholder="Fecha de nacimiento" onfocus="(this.type='date')">
 
 								@error('birth_date')
 									<span class="invalid-feedback" role="alert">
