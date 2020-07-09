@@ -59,11 +59,11 @@
 		<article class="article__index article__index--5">
 				<div class="container__article--5">
 					<img class="container__item--img5" src="static\img\img-5.jpg" alt="Regístrese con nosotros">
-					<span class="container__item--title container__item--title5">Regístrate para más información acerca 
+					<span class="container__item--title container__item--title5">Escríbanos para más información acerca 
 						de nosotros</span>
-					<Button class="container__item--button2">
-						<span class="container__item--text--button2">Registrarme</span>
-					</Button>
+					<a href="{{ url('contact') }}" class="container__item--button2">
+						<span class="container__item--text--button2">Consultar</span>
+					</a>
 				</div>
 		</article>
 	</section>
