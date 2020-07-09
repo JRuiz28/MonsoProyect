@@ -34,9 +34,6 @@ Route::get('contact', function () {
 
 
 Auth::routes();
-// Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('index');
 Route::post('/registerUser', 'userController@store');

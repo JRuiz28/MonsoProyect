@@ -20,10 +20,10 @@
 		<article class="container__form">
 			<div class="container__form--img">
 
-			<div class="bg__product"></div>
-				 
-			<form class="form form__product" method="POST" 
-				action="{{ url('product/update/'.$product)}}"
+				<div class="bg__product"></div>
+					
+				<form class="form form__product" method="POST" 
+				action="{{ url('product/update/'.$product->id )}}"
 				enctype="multipart/form-data">
 					@method('PUT')
 					@csrf
@@ -31,7 +31,7 @@
 					<span class="form__title">Editar producto</span>
 					
 					<div class="product-name">
-						<input value="{{ old('name', $product->name ) }}" class="form__input" type="text" placeholder="Nombre de producto" name="nameProduct" id="name">
+						<input value="{{ old('name', $product->name ) }}" class="form__input" type="text" placeholder="Nombre de producto" name="nameP" id="name">
 					</div>
 
 
