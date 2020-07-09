@@ -68,6 +68,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $status='Usuario registrado exitosamente!';
         return User::create([
             
             'role' => $data['role'],
@@ -79,6 +80,5 @@ class RegisterController extends Controller
             
 
         ]);
-        // back()->with(compact('status'));
     }
 }
