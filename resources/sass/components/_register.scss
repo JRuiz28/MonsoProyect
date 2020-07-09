@@ -76,8 +76,8 @@ $font-primary: Open Sans Condensed;
         font-size: x-large;
         font-family: $font-primary;
         &:hover {
-            background: #58a873;
-            color: #fff !important;
+            background:$color-tertiary;
+            color:$color-primary;
         }
     }
     

@@ -735,8 +735,8 @@
 }
 
 .register__btn:hover {
-  background: #58a873;
-  color: #fff !important;
+  background: #3a4f41;
+  color: #ffff;
 }
 
 @media only screen and (min-width: 640px) {
@@ -1098,8 +1098,8 @@
 }
 
 .register__btn:hover {
-  background: #58a873;
-  color: #fff !important;
+  background: #3a4f41;
+  color: #ffff;
 }
 
 @media only screen and (min-width: 640px) {
