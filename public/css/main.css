@@ -636,6 +636,12 @@
   box-sizing: border-box;
   border-radius: 3px;
   text-align: center;
+  transition: 0.5 ease;
+}
+
+.login__form--submit:hover {
+  background-color: #828282;
+  color: white;
 }
 
 .login__form > input {
@@ -1025,12 +1031,12 @@
   font-weight: bold;
   width: 100px;
   height: 30px;
-  transition: all 0.5s ease;
+  transition: 0.5s ease;
 }
 
-.form__button :hover {
+.form__button:hover {
   background: #58a873;
-  color: #fff !important;
+  color: #fff;
 }
 
 .product-name {
