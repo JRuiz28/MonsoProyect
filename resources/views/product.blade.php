@@ -11,7 +11,7 @@
 			<article class="product">
 				<figure class="product__imgContainer">
 					<!-- <div class="product__img"></div> -->
-					<img class="product__img" src="{{asset('static/img/avena.jpeg')}}" alt="Imagen de muestra del producto"/>
+					<img class="product__img" src="/{{ $product->image_path }}" alt="Imagen de muestra del producto"/>
 				</figure>
 				<article class="product__detail">
 					<label class="product__text"><strong>Precio:</strong></label class="text-product"><label>₡{{ $product->price }}</label>
