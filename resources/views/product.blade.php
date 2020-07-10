@@ -9,15 +9,17 @@
 		<section class="main__container">
 			<h1 class="product__title">Jabón Manzanilla y miel</h1>
 			<article class="product">
-				<figure class="product__imgContainer">
-					<!-- <div class="product__img"></div> -->
-					<img class="product__img" src="{{asset('static/img/avena.jpeg')}}" alt="Imagen de muestra del producto"/>
-				</figure>
-				<article class="product__detail">
-					<label class="product__text"><strong>Precio:</strong></label class="text-product"><label>₡5.000</label>
-					<label class="product__text">Cantidad:</label class="text-product"><label>100</label>
-					<label class="product__text">Estado del producto:</label class="text-product"><label>Disponible</label>
-				</article>
+				<section class="product__container">
+					<figure class="product__imgContainer">
+						<!-- <div class="product__img"></div> -->
+						<img class="product__img" src="{{asset('static/img/avena.jpeg')}}" alt="Imagen de muestra del producto"/>
+					</figure>
+					<article class="product__detail">
+						<label class="product__text">Precio: <label class="product__information">₡5.000</label></label>
+						<label class="product__text">Cantidad: <label class="product__information">100</label></label>
+						<label class="product__text">Estado del producto: <label class="product__information product__information--avaible" >Disponible</label></label>
+					</article>
+				</section>
 			</article>
 			<section class="description">
 				<h2 class="description__title">Descripción</h2>
