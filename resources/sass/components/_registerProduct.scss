@@ -75,7 +75,7 @@ margin: 4% 2% 5%;
         width: 100px;
         height: 30px;
         transition: all 0.5s ease;
-        &:hover {
+        :hover {
             background: #58a873;
             color: #fff !important;
         }

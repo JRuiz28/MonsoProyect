@@ -13,9 +13,12 @@ class ProductController extends Controller
         $this->middleware('auth'); 
     }
 
+    public function show(product $product){
+        return view('product', compact('product'));
+    }
+
     public function create(){
-        $ingredients = ingredient::all();
-        return view('product.create', compact('ingredients'));
+        return view('product.create');
     }
     
     public function list(){

@@ -78,6 +78,7 @@ $font-primary: Open Sans Condensed;
         &:hover {
             background:$color-tertiary;
             color:$color-primary;
+             transition: color 0.5s;
         }
     }
     
