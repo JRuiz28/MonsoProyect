@@ -428,7 +428,6 @@
 .container__item--p3 {
   width: 320px;
   float: right;
-  margin-right: 50px;
   z-index: 1;
 }
 
@@ -498,7 +497,7 @@
     justify-content: center;
   }
 
-  .container__article .container__article--3 {
+  .container__article--3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -582,10 +581,12 @@
 
   .container__item--container--p3 {
     order: 3;
+    width: 100%;
   }
 
   .container__item--p3 {
-    width: auto;
+    width: 200px;
+    justify-content: right;
   }
 
   .container__item--container--left {

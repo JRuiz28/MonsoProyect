@@ -59,6 +59,7 @@
             width: 100%;
             height: auto;
         }
+        
         & &--4{
             display: flex;
             width: 1000px;
@@ -178,7 +179,6 @@
         &--p3{
             width: 320px;
             float: right;
-            margin-right: 50px;
             z-index: 1;
         }
         &--p4{
@@ -243,7 +243,7 @@
                 flex-direction: column;
                 justify-content: center;
             }
-            & &--3{
+            &--3{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -315,9 +315,11 @@
             }
             &--container--p3{
                 order: 3;
+                width: 100%;
             }
             &--p3{
-                width: auto;
+                width: 200px;
+                justify-content: right;
             }
             &--container--left{
                 display: flex;
