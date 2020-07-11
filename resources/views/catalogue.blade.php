@@ -12,19 +12,17 @@
 			<span class="title-catalogue">Catálogo</span>
 			<div class="box-products">
 				@foreach($products as $product)
-					
-				<div class="item">
-					
-						<img class="item__img-catalogue" src="{{$product['image_path']}}" alt="">
-						<h1 class="item__title-catalogue">{{$product['name']}}</h1>
-						<p class="item__paragraph-catalogue">{{$product['description']}}</p>
-						<button class="item__button-catalogue" value="{{$product['id']}}"  onclick="location.href='{{ url('product/'.$product->id) }}'">Ver más</button>
+					<div class="item">
+						
+							<img class="item__img-catalogue" src="{{$product['image_path']}}" alt="">
+							<h1 class="item__title-catalogue">{{$product['name']}}</h1>
+							<p class="item__paragraph-catalogue">{{$product['description']}}</p>
+							<button class="item__button-catalogue" value="{{$product['id']}}"  onclick="location.href='{{ url('product/'.$product->id) }}'">Ver más</button>
 
-				</div>
-				
-				@endforeach  
-					
-			</div>
+					</div>
+				@endforeach
+			</div>  
+				{{ $products->links() }}	
 			
 		</article>
 	</section>

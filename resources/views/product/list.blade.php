@@ -44,11 +44,11 @@
 							
 								<td class="text-center"> <!-- SECONDS CLASS (text-center) IS BOOTSTRAP  -->
 
-									<a href="{{ url('product/edit/'.$product->id) }}" class="button__list btn btn-info btn-xs" name="Editar">
+									<a href="{{ url('product/edit/'.$product->id) }}" class="button__list btn btn-info btn-xs" title="Editar" data-toggle="tooltip">
 										<i class="fas fa-edit"></i>
 									</a>
 
-									<a href="{{ url('product/delete/'.$product->id) }}"  type="button" class="button__list btn btn-danger btn-xs" name="Eliminar">
+									<a href="{{ url('product/delete/'.$product->id) }}"  type="button" class="button__list btn btn-danger btn-xs" title="Eliminar" data-toggle="tooltip">
 										<i class="fas fa-trash-alt"></i>
 									</a>
 									
