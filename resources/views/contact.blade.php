@@ -8,7 +8,7 @@
 	
 	<!--start body-->
 
-	<div class="container">
+	<div class="container container--contact ">
 		<div class="row justify-content-center" >
 			<div class="col-md-12 container__info"> 
 				<button  onclick="location.href='{{ url('back') }}'" type="button" class="btn btn-danger button__backIndex"><i class="fas fa-arrow-alt-circle-left"></i>  Back</button>

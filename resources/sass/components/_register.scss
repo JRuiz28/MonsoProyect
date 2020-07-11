@@ -10,10 +10,8 @@ $font-primary: Open Sans Condensed;
     display: flex;
     height: 100%;
     &__img {
-        // filter: blur(6px);
         margin: 0;
-        // border: 1px solid red;
-        //background-image: url("../img/img-5.jpg");
+        background-image: url('../img/img-5.jpg');
         background-size: cover;
         width: 100%;
         background-repeat: no-repeat;
