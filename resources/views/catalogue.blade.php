@@ -18,7 +18,7 @@
 						<img class="item__img-catalogue" src="{{$product['image_path']}}" alt="">
 						<h1 class="item__title-catalogue">{{$product['name']}}</h1>
 						<p class="item__paragraph-catalogue">{{$product['description']}}</p>
-						<a class="item__button-catalogue" value="{{$product['id']}}" href="{{ url('product/'.$product->id)}}">Ver más</a>
+						<button class="item__button-catalogue" value="{{$product['id']}}"  onclick="location.href='{{ url('product/'.$product->id) }}'">Ver más</button>
 
 				</div>
 				
