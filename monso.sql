@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-07-2020 a las 01:35:18
+-- Tiempo de generación: 12-07-2020 a las 01:42:52
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.6
 
@@ -169,17 +169,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `role`, `name`, `surname`, `email`, `email_verified_at`, `password`, `birth_date`, `remember_token`, `created_at`, `updated_at`) VALUES
-(4, '1', 'admin', 'admin', 'admin@gmail.com', NULL, '$2y$10$2hIoDx1BAeIUD99Vbjl2L.TKQNJloIo5aAwrzlZYygQznfbP0Grm6', '00/00/00', NULL, '2020-07-04 08:20:15', '2020-07-04 08:20:15'),
-(5, '1', 'Josué', 'Ruiz', 'jrc2899@gmail.com', NULL, '12345678', '28/02/1999', NULL, '2020-07-04 10:09:46', '2020-07-04 10:09:46'),
-(6, '1', 'Tarik', 'Diaz', 'diaztarik12@gmail.com', NULL, '$2y$10$UakYrntDBLYthF3jN0cFw.SGjvrQdzAbEX.5yKm.Q7mUt2MdmSQDS', '28/04/1985', NULL, '2020-07-04 10:14:37', '2020-07-04 10:14:37'),
-(7, '1', 'Geovanny', 'Fernandez', 'geovanex24@hotmail.com', NULL, '$2y$10$s0rgZvVqARDlAYW9qfOEi.bTrd.uSUtmdht39aBSxerWirt6hHx6y', '24/06/1999', NULL, '2020-07-04 10:18:45', '2020-07-04 10:18:45'),
-(8, '1', 'Fabricio', 'Vargas', 'Fabricio@homerito.com', NULL, '$2y$10$gIeEX0Fwf5atBduYIo3Gaevu55HMcntZAMv81jCFbKblSGnq.fHJy', '31/05/1999', NULL, '2020-07-04 10:19:31', '2020-07-04 10:19:31'),
-(9, '1', 'Joseph Mauricio', 'Morales', 'josephmms@gmail.com', NULL, '$2y$10$DfQZ7qkt/qkV/wr7tVagu.YCOMk1lR9ZuhhQQ/QCX4b6LasjmkryW', '27/11/1999', NULL, '2020-07-04 10:26:50', '2020-07-04 10:26:50'),
-(10, '2', 'Sebastian', 'Mesen', 'sebasmesen17@gmail.com', NULL, '$2y$10$mGHHtQy24hwLFYPhMInlz.lNQ.vWNmLTPBIZP2jNZNRj2jJITcygC', '17/12/1998', NULL, '2020-07-04 10:28:35', '2020-07-04 10:28:35'),
-(11, '2', 'Eidam', 'Montero', 'eidam2015@hotmail.com', NULL, '$2y$10$SLIUKdrScx.dOvLepkAznOerENlwf1IYaIVNQsMPqjE4rr0uqAIh.', '20/12/2015', NULL, '2020-07-04 10:30:14', '2020-07-04 10:30:14'),
-(12, '1', 'Josué', 'Ruiz', 'jrc2899@gmail5.com', NULL, '$2y$10$6qr2SllEyqs0tPdxB19EmeGAzfPW6B7oWw2TBkv41WHR67qfpXKFe', '1999-02-28', NULL, '2020-07-09 11:25:06', '2020-07-09 11:25:06'),
-(13, 'Admin', 'Joseph', 'Morales', 'josephmms1999@gmail.com', NULL, '$2y$10$YQTPPxfhvUY/mgHF9qUlXuY5C9W7uBeePZ.gpmay/2CLa4cL6joCG', '1999-09-27', NULL, '2020-07-12 03:47:33', '2020-07-12 03:47:33'),
-(14, 'Admin', 'Mauricio', 'Morales', 'mauricio@gmail.com', NULL, '$2y$10$fKiI0nwhPJc2w3c101lEwOQ7BAY/LjAHj0vhf7zUgarGIv60CPDeq', '1999-09-27', NULL, '2020-07-12 03:54:27', '2020-07-12 03:54:27');
+(4, '1', 'admin', 'admin', 'admin@gmail.com', NULL, '$2y$10$2hIoDx1BAeIUD99Vbjl2L.TKQNJloIo5aAwrzlZYygQznfbP0Grm6', '00/00/00', NULL, '2020-07-04 08:20:15', '2020-07-04 08:20:15');
 
 --
 -- Índices para tablas volcadas
@@ -256,7 +246,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT de la tabla `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT de la tabla `product_ingredients`
