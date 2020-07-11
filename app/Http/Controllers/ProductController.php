@@ -69,6 +69,7 @@ class ProductController extends Controller
         product::find($id)->delete();
         
         $status = "¡Producto se ha eliminado de manera exitosa!";
-        return back()->with(compact('status'));
-}
+        return back()->with(compact('status')); 
+    }
+
 }

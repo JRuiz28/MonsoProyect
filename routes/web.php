@@ -37,3 +37,5 @@ Route::put('product/update/{product}', 'ProductController@update')->middleware('
 Route::get('product/delete/{id}', 'ProductController@delete')->middleware('auth');
 
 Route::get('catalogue', 'catalogueController@index');
+
+Route::get('back', 'HomeController@back');

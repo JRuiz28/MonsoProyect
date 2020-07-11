@@ -11,6 +11,8 @@
 	<div class="container">
 		<div class="row justify-content-center" >
 			<div class="col-md-12 container__info"> 
+				<button  onclick="location.href='{{ url('back') }}'" type="button" class="btn btn-danger button__backIndex"><i class="fas fa-arrow-alt-circle-left"></i>  Back</button>
+
 				<form action="" class="form__contact">
 					
 					<div class="div__item--contact">
@@ -48,9 +50,6 @@
 					</div>
 
 					<button type="submit" class="button--contact"><i class="fas fa-paper-plane"></i>   Enviar</button>
-
-					
-
 				</form>
 			</div>
 		</div>

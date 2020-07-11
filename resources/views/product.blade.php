@@ -26,6 +26,8 @@
 				<p class="description__detail"> {{ $product->description }} </p>
 			</section>
 			
+			<button  onclick="location.href='{{ url('catalogue') }}'" type="button" class="btn btn-danger"><i class="fas fa-arrow-alt-circle-left"></i>  Back</button>
+
 		</section>
 	</section>
 	<!--End - body-->

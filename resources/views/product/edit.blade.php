@@ -69,6 +69,8 @@
 					</div>
 				</form>
 		
+				<button  onclick="location.href='{{ url('/product/list') }}'" type="button" class="btn btn-danger"><i class="fas fa-arrow-alt-circle-left"></i>  Back</button>
+
 			</div>
 		</article>
 	</section>
