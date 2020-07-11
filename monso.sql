@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-07-2020 a las 01:27:36
+-- Tiempo de generación: 12-07-2020 a las 01:35:18
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.6
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `monso`
 --
+CREATE DATABASE IF NOT EXISTS `monso` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `monso`;
 
 -- --------------------------------------------------------
 
