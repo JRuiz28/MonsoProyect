@@ -904,6 +904,7 @@
   background-color: #ffff;
   display: flex;
   height: 100%;
+  border-radius: 0;
 }
 
 .main__img {
@@ -998,12 +999,23 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .main {
+    height: 80%;
+    width: 100%;
+  }
+
   .main__img {
-    width: 75%;
+    height: 100%;
+    width: 70%;
   }
 
   .register {
     width: 50%;
+    height: auto;
+  }
+
+  .register__form {
+    padding: 30px;
   }
 }
 
@@ -1318,6 +1330,7 @@
   background-color: #ffff;
   display: flex;
   height: 100%;
+  border-radius: 0;
 }
 
 .main__img {
@@ -1412,12 +1425,23 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .main {
+    height: 80%;
+    width: 100%;
+  }
+
   .main__img {
-    width: 75%;
+    height: 100%;
+    width: 70%;
   }
 
   .register {
     width: 50%;
+    height: auto;
+  }
+
+  .register__form {
+    padding: 30px;
   }
 }
 
