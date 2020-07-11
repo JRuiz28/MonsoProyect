@@ -13,7 +13,7 @@ $font-primary: Open Sans Condensed;
         // filter: blur(6px);
         margin: 0;
         // border: 1px solid red;
-        background-image: url("../img/img-5.jpg");
+        //background-image: url("../img/img-5.jpg");
         background-size: cover;
         width: 100%;
         background-repeat: no-repeat;
@@ -29,7 +29,6 @@ $font-primary: Open Sans Condensed;
     height: 500px;
     width: 100%;
     margin:  10px 0px;
-
     &__exit {
         align-self: flex-end;
     }
@@ -43,7 +42,6 @@ $font-primary: Open Sans Condensed;
         font-family: $font-primary;
         color: $color-tertiary;
         font-size: xx-large;
-
     }
     &__form {
         display: flex;
@@ -62,7 +60,6 @@ $font-primary: Open Sans Condensed;
         background-color:$color-secondary;
         outline: none;
         border-bottom: solid 1px $color-tertiary;
-
     }
     &__btn{
         margin-top: 10px;
@@ -81,7 +78,6 @@ $font-primary: Open Sans Condensed;
              transition: color 0.5s;
         }
     }
-    
 }
 @media only screen and (min-width: 640px){
     .main {
@@ -89,8 +85,7 @@ $font-primary: Open Sans Condensed;
         &__img{
             width: 75%;
             display: flex;
-            justify-content: center;
-            
+            justify-content: center;  
         }
     }
     .register{

@@ -30,30 +30,32 @@
     align-items: center;
     margin: 5px;
     background: #f5f5f5;
+    & > .item__img-catalogue{
+        width: 100%;
+    } 
+    & > .item__title-catalogue{
+        font-size: 45px;
+        font-family: $openSans;
+        padding-bottom: 20px;
+    }
+    & > .item__paragraph-catalogue{
+        font-family: $openSans;
+        padding-bottom: 25px;
+    }
+    & > .item__button-catalogue{
+        width: 35%;
+        height: 30px;
+        border-radius: 2px;
+        border: 1px solid black;
+        margin-bottom: 25px;
+    }   
+    & > .item__button-catalogue:hover{
+        background: black;
+        color: white;
+    } 
 }     
-.item  > .item__img-catalogue{
-    width: 100%;
-} 
-.item  > .item__title-catalogue{
-    font-size: 45px;
-    font-family: $openSans;
-    padding-bottom: 20px;
-}
-.item  > .item__paragraph-catalogue{
-    font-family: $openSans;
-    padding-bottom: 25px;
-}
-.item  > .item__button-catalogue{
-    width: 35%;
-    height: 30px;
-    border-radius: 2px;
-    border: 1px solid black;
-    margin-bottom: 25px;
-}   
-.item  > .item__button-catalogue:hover{
-    background: black;
-    color: white;
-} 
+
+ 
 
 
 
