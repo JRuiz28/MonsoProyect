@@ -11,7 +11,7 @@
 	<div class="container container--contact ">
 		<div class="row justify-content-center" >
 			<div class="col-md-12 container__info"> 
-				<button  onclick="location.href='{{ url('/product/list') }}'" title="Volver al menú principal" data-toggle="tooltip" 
+				<button  onclick="location.href='{{ url('back') }}'" title="Volver al menú principal" data-toggle="tooltip" 
 				type="button" class="btn btn-danger button__back"><i class="fas fa-arrow-alt-circle-left"></i></button>
 
 				<form action="" class="form__contact">
