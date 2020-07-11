@@ -940,12 +940,19 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .main {
+    height: 80vh;
+    width: 100%;
+  }
+
   .main__img {
-    width: 75%;
+    height: 100%;
+    width: 40%;
   }
 
   .register {
     width: 50%;
+    height: auto;
   }
 }
 
@@ -1361,12 +1368,19 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .main {
+    height: 80vh;
+    width: 100%;
+  }
+
   .main__img {
-    width: 75%;
+    height: 100%;
+    width: 40%;
   }
 
   .register {
     width: 50%;
+    height: auto;
   }
 }
 
