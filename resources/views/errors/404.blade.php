@@ -11,7 +11,7 @@
             <div class="section__container-paragraph">
                 <p class="section__container-paragraph--paragraph">La página que estabas buscando, no se encuentra disponible.
                 </p>
-                <button class="section__container-paragraph--button">
+                <button onclick="location.href='{{ url('/') }}'" class="section__container-paragraph--button">
                     Volver a inicio
                 </button>
             </div>

@@ -23,7 +23,7 @@
 					<span class="container__item--title2">Piel suave</span>
 					<p class="container__item--paragraph">
 						Contamos con variedad de jabones artesanales para que tu pies esté siempre suave. </p>
-					<Button class="container__item--button1">
+					<Button onclick="location.href='{{ url('catalogue') }}'" class="container__item--button1">
 						<span class="container__item--text--button">Ver Catálogo</span>
 					</Button>
 				</div>
@@ -48,7 +48,7 @@
 				<div class="container__item--container--left">
 					<span class="container__item--title article__item--title4">Luzca bien siempre</span>
 					<p class="container__item--paragraph article__item--p4">Mira uno de los productos favoritos de nuestros clientes. </p>
-					<Button class="container__item--button1">
+					<Button onclick="location.href='{{ url('catalogue') }}'" class="container__item--button1">
 						<span class="container__item--text--button">Ver producto</span>
 					</Button>
 				</div>
