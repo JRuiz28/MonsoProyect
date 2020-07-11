@@ -47,7 +47,7 @@
 					
 					<div class="div__item--contact">
 						<label class="label--contact" for="comment">Comentario:</label>
-						<textarea class="textarea--contact" name="comment" id="comment" cols="30" rows="10"></textarea>
+						<textarea class="textarea" name="comment" id="comment" cols="30" rows="10"></textarea>
 					</div>
 
 					<button type="submit" class="button--contact"><i class="fas fa-paper-plane"></i>   Enviar</button>

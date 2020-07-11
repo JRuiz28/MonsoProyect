@@ -41,11 +41,11 @@
 					<div class="product-name">
 						<input value="{{ old('name', $product->name ) }}" class="form__input" type="text" placeholder="Nombre de producto" name="nameP" id="name">
 					</div>
-
-
+					
 					<div class="form__description">
-						<input class="form__input"  value="{{ old('description', $product->description ) }}" type="text" placeholder="Descripción" name="description">
+						<textarea class="textarea" placeholder="{{ old('description', $product->description ) }}" type="text" name="description" cols="30" rows="4"></textarea>
 					</div>
+
 
 
 					<div class="form__quantity">
@@ -69,7 +69,7 @@
 
 
 					<div class="form__upload-image" >
-						<input class="form__input" value="{{ old('image_path') }}" type="file" placeholder="Subir imagen" name="image_path" />
+						<input class="form__input" value="{{ old('image_path') }}" type="file" placeholder="{{ old('image_path') }}" name="image_path" />
 					</div>
 
 					<div class="form__action-buttons">

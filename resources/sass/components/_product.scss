@@ -12,7 +12,6 @@ $font-primary: Open Sans Condensed;
     color: $color-tertiary;
     background: $color-primary;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
     display: flex;
     flex-direction: column;
     &__container {
@@ -104,9 +103,12 @@ $font-primary: Open Sans Condensed;
 }
 
 @media only screen and (min-width: 640px) {
+    
     .main {
         &__container {
-            width: 50%;
+            border-radius: 5px;
+            width: 100%;
+            padding: 50px;
             display: flex;
             flex-direction: column;
         }

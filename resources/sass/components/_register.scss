@@ -102,10 +102,12 @@ $font-primary: Open Sans Condensed;
 @media only screen and (min-width: 1024px){
     .main {
         &__img{
+            height: 80vh;
             width: 75%;   
         }
     }
     .register{
+        margin: auto;
         width: 50%;
     }
 }

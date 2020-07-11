@@ -40,7 +40,7 @@
 					</div>
 
 					<div class="form__description">
-						<input class="form__input"  type="text" placeholder="Descripción" name="description">
+						<textarea class="form__input" class="textarea" style=" resize: none" type="text" placeholder="Descripción" name="description" name="" id="" cols="30" rows="4"></textarea>
 					</div>
 
 
