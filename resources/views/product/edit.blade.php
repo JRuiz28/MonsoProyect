@@ -28,8 +28,16 @@
 					@method('PUT')
 					@csrf
 
-					<span class="form__title">Editar producto</span>
-					
+					<div class="form__product--header">
+						<div class="form__container--title">		
+							<span class="form__title--create">Modificar producto</span>
+						</div>
+						
+						<div class="button__container">							
+							<button  onclick="location.href='{{ url('/product/list') }}'" type="button" title="Volver a lista de producto" data-toggle="tooltip"
+							class="btn btn-danger button__back"><i class="fas fa-arrow-alt-circle-left"></i></button>
+						</div>
+					</div>
 					<div class="product-name">
 						<input value="{{ old('name', $product->name ) }}" class="form__input" type="text" placeholder="Nombre de producto" name="nameP" id="name">
 					</div>
@@ -68,7 +76,6 @@
 						<button class="form__button" type="submit" text="Modificar">Modificar</button>
 					</div>
 				</form>
-		
 			</div>
 		</article>
 	</section>

@@ -7,6 +7,12 @@
 	<!--start body-->
 	<section class="main">
 		<section class="main__container">
+		
+		<div class="button__container--product">			
+			<button  onclick="location.href='{{ url('catalogue') }}'" type="button" class="btn btn-danger button__back" style="width: 50px" title="Volver al catálogo" data-toggle="tooltip" > 
+				<i class="fas fa-arrow-alt-circle-left"></i></button>
+		</div>
+
 		<h1 class="product__title">{{ $product->name }}</h1>
 			<article class="product">
 				<section class="product__container">

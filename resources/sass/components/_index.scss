@@ -316,6 +316,9 @@
             &--container--p3{
                 order: 3;
             }
+            &--p3{
+                width: auto;
+            }
             &--container--left{
                 display: flex;
                 flex-direction: column;

@@ -25,4 +25,10 @@ class HomeController extends Controller
     {
         return view('index');
     }
+    
+    public function back()
+    {
+        return view('index');
+    }
+    
 }

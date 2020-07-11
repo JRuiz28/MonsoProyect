@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="main">
+<section class="main--login">
     
 	<section class="login">
        <form method="POST" action="{{ route('login') }}" class="login__form">

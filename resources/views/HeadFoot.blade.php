@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Monso</title>
+    <link  rel="icon" href="/images/logo.ico" type="image/icon" />
 
 	<!--CSS Styles-->
-<link rel="stylesheet" href="{{asset('/css/app.css')}}">
-<link rel="stylesheet" href="{{asset('/css/main.css')}}">
-<link rel="stylesheet" href="{{asset('/css/listProduct.css')}}">
-<link rel="stylesheet" href="{{asset('/css/contact.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/listProduct.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/contact.css')}}">
 
 
 	<!--JS-->    

@@ -102,6 +102,7 @@ $font-primary: Open Sans Condensed;
         }
     }
 }
+
 @media only screen and (min-width: 640px) {
     .main {
         &__container {
@@ -148,6 +149,10 @@ $font-primary: Open Sans Condensed;
             width: 100%;
         }
     }
+}
+
+.btn-danger:hover{
+    color: silver;
 }
 // .article{
 //     &__title-product{
