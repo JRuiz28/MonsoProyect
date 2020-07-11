@@ -886,6 +886,7 @@
     width: 75%;
     display: flex;
     justify-content: center;
+    align-self: center;
   }
 
   .register {
@@ -1403,6 +1404,7 @@
     width: 75%;
     display: flex;
     justify-content: center;
+    align-self: center;
   }
 
   .register {
