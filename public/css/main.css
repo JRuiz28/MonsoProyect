@@ -102,12 +102,15 @@
 }
 
 .container {
-  background: url("/images/fondo.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
+}
+
+.container--contact {
+  background: url("/images/fondo.jpg");
 }
 
 .container__info {
@@ -847,6 +850,7 @@
 
 .main__img {
   margin: 0;
+  background-image: url(/images/img-5.jpg?a5c6b9299e6b49c6017fb5323075cf96);
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
@@ -1267,6 +1271,7 @@
 
 .main__img {
   margin: 0;
+  background-image: url(/images/img-5.jpg?a5c6b9299e6b49c6017fb5323075cf96);
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;

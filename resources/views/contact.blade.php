@@ -8,7 +8,7 @@
 	
 	<!--start body-->
 
-	<div class="container">
+	<div class="container container--contact ">
 		<div class="row justify-content-center" >
 			<div class="col-md-12 container__info"> 
 				<form action="" class="form__contact">
