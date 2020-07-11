@@ -904,6 +904,8 @@
   background-color: #ffff;
   display: flex;
   height: 100%;
+  border-radius: 0;
+  height: 80vh;
 }
 
 .main__img {
@@ -999,18 +1001,22 @@
 
 @media only screen and (min-width: 1024px) {
   .main {
-    height: 80vh;
+    height: 80%;
     width: 100%;
   }
 
   .main__img {
-    height: 100%;
-    width: 40%;
+    height: 80vh;
+    width: 70%;
   }
 
   .register {
     width: 50%;
-    height: auto;
+    height: 95%;
+  }
+
+  .register__form {
+    padding: 30px;
   }
 }
 
@@ -1325,6 +1331,8 @@
   background-color: #ffff;
   display: flex;
   height: 100%;
+  border-radius: 0;
+  height: 80vh;
 }
 
 .main__img {
@@ -1420,18 +1428,22 @@
 
 @media only screen and (min-width: 1024px) {
   .main {
-    height: 80vh;
+    height: 80%;
     width: 100%;
   }
 
   .main__img {
-    height: 100%;
-    width: 40%;
+    height: 80vh;
+    width: 70%;
   }
 
   .register {
     width: 50%;
-    height: auto;
+    height: 95%;
+  }
+
+  .register__form {
+    padding: 30px;
   }
 }
 
