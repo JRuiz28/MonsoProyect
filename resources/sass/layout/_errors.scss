@@ -1,0 +1,35 @@
+.section{
+    display: inline-flex;
+    background-color: none;
+    margin: 50px 30%;
+    font-family: $openCondensed;
+    font-weight: 900;
+    font-size: 3em;
+    &__container-img{
+        &--404{
+            align-items: flex-start;
+        }
+        &--403{
+            align-items: flex-start;
+        }
+    }
+    &__container-paragraph{
+        &--button{
+            margin-top: 10px;
+            border-radius: 10px;
+            height: 15%;
+            width: 60%;
+            color: $color-tertiary;
+            background-color: $color-secondary;
+            border: solid 1px $color-tertiary;
+            font-weight: bold;
+            font-size: 50%;
+            font-family: $font-primary;
+            &:hover {
+                background:$color-tertiary;
+                color:$color-primary;
+                 transition: color 0.5s;
+            }
+        }
+    }
+}
