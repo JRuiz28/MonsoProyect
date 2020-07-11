@@ -26,7 +26,7 @@
 						@csrf
 
 	
-								<input id="role" type="text" class=" register__text @error('role') is-invalid @enderror" name="role" value="Admin" disabled required autocomplete="role" autofocus placeholder="Rol">
+								<input id="role" type="text" class=" register__text @error('role') is-invalid @enderror" name="role" value="Admin" readonly required autocomplete="role" autofocus placeholder="Rol">
 
 								@error('role')
 									<span class="invalid-feedback" role="alert">

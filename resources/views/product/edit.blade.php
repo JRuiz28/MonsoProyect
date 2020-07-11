@@ -43,7 +43,8 @@
 					</div>
 					
 					<div class="form__description">
-						<textarea class="textarea" placeholder="{{ old('description', $product->description ) }}" type="text" name="description" cols="30" rows="4"></textarea>
+						<textarea class="textarea" value="{{ old('description', $product->description ) }}"   
+							type="text" name="description" cols="30" rows="4"></textarea>
 					</div>
 
 
