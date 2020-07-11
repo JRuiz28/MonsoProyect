@@ -27,6 +27,9 @@
 				enctype="multipart/form-data">
 					@method('PUT')
 					@csrf
+					
+					<button  onclick="location.href='{{ url('back') }}'" title="Volver a lista de producto" data-toggle="tooltip" 
+					type="button" class="btn btn-danger button__back"><i class="fas fa-arrow-alt-circle-left"></i></button>
 
 					<span class="form__title">Editar producto</span>
 					
@@ -68,9 +71,6 @@
 						<button class="form__button" type="submit" text="Modificar">Modificar</button>
 					</div>
 				</form>
-		
-				<button  onclick="location.href='{{ url('/product/list') }}'" type="button" class="btn btn-danger"><i class="fas fa-arrow-alt-circle-left"></i>  Back</button>
-
 			</div>
 		</article>
 	</section>

@@ -11,12 +11,13 @@
 	<div class="container container--contact ">
 		<div class="row justify-content-center" >
 			<div class="col-md-12 container__info"> 
-				<button  onclick="location.href='{{ url('back') }}'" type="button" class="btn btn-danger button__backIndex"><i class="fas fa-arrow-alt-circle-left"></i>  Back</button>
+				<button  onclick="location.href='{{ url('back') }}'" title="Volver a lista de producto" data-toggle="tooltip" 
+				type="button" class="btn btn-danger button__back"><i class="fas fa-arrow-alt-circle-left"></i></button>
 
 				<form action="" class="form__contact">
 					
 					<div class="div__item--contact">
-						<h1>Tu opinión es importante para nosotros</h1>
+						<h1 class="h1--contact">Tu opinión es importante para nosotros</h1>
 					</div>
 
 					<div class="div__item--contact">

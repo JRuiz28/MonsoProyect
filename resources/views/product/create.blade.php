@@ -24,6 +24,9 @@
 					enctype="multipart/form-data">
 					@csrf
 
+					<button  onclick="location.href='{{ url('/product/list') }}'" type="button" 
+					class="btn btn-danger button__back"><i class="fas fa-arrow-alt-circle-left"></i></button>
+
 					<span class="form__title">Registro de producto</span>
 					
 					<div class="product-name">
@@ -63,9 +66,7 @@
 						<button class="form__button" type="submit" text="Registrar">Registrar</button>
 					</div>
 				</form>
-				
-				<button  onclick="location.href='{{ url('/product/list') }}'" type="button" class="btn btn-danger"><i class="fas fa-arrow-alt-circle-left"></i>  Back</button>
-
+			
 			</div>
 		</article>
 	</section>
