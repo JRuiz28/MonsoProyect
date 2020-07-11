@@ -23,7 +23,6 @@
 					<article class="product__detail">
 						<label class="product__text">Precio: <label class="product__information">₡{{ $product->price }}</label></label>
 						<label class="product__text">Cantidad: <label class="product__information">{{ $product->stock }}</label></label>
-						<label class="product__text">Estado del producto: <label class="product__information product__information--avaible" >Disponible</label></label>
 					</article>
 				</section>
 			</article>

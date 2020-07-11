@@ -584,6 +584,10 @@
     order: 3;
   }
 
+  .container__item--p3 {
+    width: auto;
+  }
+
   .container__item--container--left {
     display: flex;
     flex-direction: column;
